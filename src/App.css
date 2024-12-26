@@ -1,0 +1,104 @@
+/* #root {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(./assets/background1.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* body{
+  background-image: url(./assets/background1.jpg);
+  background-size: 100% 100%;
+} */ 
+
+@font-face {
+  font-family: "avram";
+  src: url(./assets/Abraham-Regular.ttf);
+}
+
+ body {
+    background-image: url(assets/background1.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "avram";
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  /* .background-img {
+    background-size: 100% 100%;
+    height: 100vh;
+  } */
+.start-page {
+  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* להבטיח שהכותרות יתפוסו את כל הגובה */
+  position: relative;
+  top: 12vh;
+  margin: 10%;
+}
+
+.btn-start-place {
+  display: flex;
+  justify-content: space-between; /* הכפתורים יפוזרו בין הקצוות */
+  width: 80vw; /* לקבוע רוחב של 80% מהמסך */
+  position: relative;
+  top: 50vh; /* להניח את הכפתורים בתחתית הדף עם רווח מלמטה */
+}
+
+.btn-start {
+  background-color: #f7a619;
+  border-radius: 15px;
+  width: 45vw; /* לכל כפתור רוחב של 45% מהמסך */
+  height: 5vh;
+  font-family: "avram";
+  border: none; /* הסרת הגבול של הכפתור */
+  cursor: pointer;
+  margin: 5%;
+}
+
+.btn-start:hover {
+  background-color: #e68913; /* שינוי צבע כאשר העכבר מעל הכפתור */
+}

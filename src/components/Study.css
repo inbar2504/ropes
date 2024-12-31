@@ -1,5 +1,21 @@
-
 body {
+  z-index: 1000;
+  /* background-image: url(../assets/background2.jpg); */
+  /* background-size: 100% 100%; */
+  /* height: 100vh; */
+  /* display: flex; */
+  font-family: "avram";
+  overflow: hidden;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between;  */
+}
+html,#root,body {
+    height: 100vh;
+    margin: 0;
+  }
+.study {
+    z-index: 1000;
     background-image: url(../assets/background2.jpg);
     background-size: 100% 100%;
     height: 100vh;
@@ -8,11 +24,120 @@ body {
     overflow: hidden;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* כדי לוודא שהתוכן יתפוס את כל הגובה */
+    width: 100vw;
+    justify-content: space-between; 
+    text-align: center;
 }
-    
-/* .background-img2 {
-    background-image: url(/ropes/public/background2.jpg);
-    background-size: 100% 100%;
-    height: 100vh;
-} */
+.study-page {
+  position: relative;
+
+}
+.swiper-horizontal::part() {
+  touch-action: pan-y;
+  position: absolute;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 49vh;
+  border-radius: 44px;
+  /* background-color: #ffffff00; */
+  /* border-color: brown; */
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mySwiper {
+  touch-action: pan-y;
+  position: absolute;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 49vh;
+  border-radius: 44px;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  /* border-color: #083b4c; */
+  /* border: 2px solid #083b4c; */
+}
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  width: calc(var(--swiper-navigation-size) / 44* 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(#083b4c, #083b4c);
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  color: #083b4c;
+}
+.text {
+  position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    font-size: 5vmin;
+}
+.text-small {
+  position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    font-size: 4vmin;
+}
+.next-btn, .last-btn {
+  background-color: #f7a619;
+  border-radius: 15px;
+  width: 20vw;
+  height: 7vh;
+  font-family: "avram";
+  border: none;
+  cursor: pointer;
+  margin: 4%;
+  font-size: 5vmin;
+}
+.move-btns {
+  display: flex;
+  justify-content: space-between; /* הכפתורים יפוזרו בין הקצוות */
+  width: 80vw; /* לקבוע רוחב של 80% מהמסך */
+  position: relative;
+  top: -5vh; /* להניח את הכפתורים בתחתית הדף עם רווח מלמטה */
+}
+.red-text {
+  color: rgb(114, 24, 24);
+}

@@ -45,30 +45,45 @@
 /* body{
   background-image: url(./assets/background1.jpg);
   background-size: 100% 100%;
-} */ 
+} */
 
 @font-face {
   font-family: "avram";
   src: url(./assets/Abraham-Regular.ttf);
 }
-
- body {
-    background-image: url(assets/background1.jpg);
+html,
+#root,
+body {
+  height: 100vh;
+  margin: 0;
+}
+body {
+    /* background-image: url(assets/background1.jpg); */
     background-size: 100% 100%;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     font-family: "avram";
     overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; 
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-between;  */
   }
-  /* .background-img {
+/* .background-img {
     background-size: 100% 100%;
     height: 100vh;
   } */
+.start {
+  background-image: url(assets/background1.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "avram";
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 .start-page {
-  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -76,7 +91,7 @@
   justify-content: center;
   flex-grow: 1; /* להבטיח שהכותרות יתפוסו את כל הגובה */
   position: relative;
-  top: 12vh;
+  top: -25%;
   margin: 10%;
 }
 
@@ -85,18 +100,19 @@
   justify-content: space-between; /* הכפתורים יפוזרו בין הקצוות */
   width: 80vw; /* לקבוע רוחב של 80% מהמסך */
   position: relative;
-  top: 50vh; /* להניח את הכפתורים בתחתית הדף עם רווח מלמטה */
+  top: -5vh; /* להניח את הכפתורים בתחתית הדף עם רווח מלמטה */
 }
 
 .btn-start {
   background-color: #f7a619;
   border-radius: 15px;
-  width: 45vw; /* לכל כפתור רוחב של 45% מהמסך */
-  height: 5vh;
+  width: 55vw;
+  height: 7vh;
   font-family: "avram";
-  border: none; /* הסרת הגבול של הכפתור */
+  border: none;
   cursor: pointer;
-  margin: 5%;
+  margin: 4%;
+  font-size: 5vmin;
 }
 
 .btn-start:hover {

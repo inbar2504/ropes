@@ -4,9 +4,10 @@ import Study from "./components/Study";
 
 function App() {
   const [show, setShow] = useState("start");
-
+  
   return (
-    <>
+    <div className="start">
+ <>
       {show === 'start' ? (
         <>
         <div className='start-page'>
@@ -31,6 +32,9 @@ function App() {
       )
     }
     </>
+
+    </div>
+   
    
   );
 }

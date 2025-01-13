@@ -16,7 +16,7 @@ function Power(props) {
   const num = 0;
   //   const [showTimer2, setShowTimer2] = useState(false);
   const resetAll = (num) => {
-    // setTimeLeft(3);
+    setTimeLeft(3);
     setTimerRunning(false);
     setIsTimeUp(false);
     setShowImage1(false);
@@ -74,7 +74,7 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              display: "contents",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -108,7 +108,7 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              display: "flex",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -122,7 +122,7 @@ function Power(props) {
           />
           {showImage1 ? (
             <>
-              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+              <img className="image1" src="src/assets/one.png" />
             </>
           ) : (
             <></>
@@ -147,9 +147,10 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              //   display: "block",
               textAlign: "center",
               direction: "rtl",
+              display: "contents",
             }}
             sequence={[
               `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי. 
@@ -168,30 +169,23 @@ function Power(props) {
           <br />
           {showImage2 ? (
             <>
-              <br />
-              <br />
-              <br />
-              <br />
               <video
                 src="src/assets/videos/Comp 1-VEED (2).mp4"
-                width="1440"
-                height="300"
+                // width="1440"
+                // height="300"
                 controls
+                autoPlay
+                className="video-comp"
               />
-              {/* <video width="320" height="240" controls>
-                <source src="src/assets/videos/comp 1.mp4" type="video/mp4">
-            
-                Your browser does not support the video tag.
-              </video> */}
-              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
-              <br />
+
               <TypeAnimation
                 style={{
                   whiteSpace: "pre-line",
                   height: "195px",
-                  display: "block",
+                  //   display: "block",
                   textAlign: "center",
                   direction: "rtl",
+                  display: "contents",
                 }}
                 sequence={[
                   "בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) ",
@@ -224,58 +218,64 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              //   display: "block",
               textAlign: "center",
               direction: "rtl",
+              display: "flex",
             }}
             sequence={[
               `התבקשתי להרים אדם השוקל T. 
-           \n חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
-           \n רמז : העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
-           \n התשובה תופיע בעוד `,
+            חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
+            רמז : העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
+             התשובה תופיע בעוד 
+            \n`,
               100,
               () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1}
+            speed={1000}
             cursor={false}
           />
 
           {showTimer1 ? (
-            <div>
+            <>
               {isTimeUp ? (
                 <>
-                  <br />
-                  <br />
-                  <h2>!הזמן נגמר</h2>
+                  <h2 className="header-timer">!הזמן נגמר</h2>
                 </>
               ) : (
                 <>
-                  <br />
-                  <br />
-                  <h2>{timeLeft}</h2>
+                  <h2 className="header-timer">{timeLeft}</h2>
                 </>
               )}
-            </div>
+            </>
           ) : (
             <></>
           )}
           {timeLeft === 0 ? (
             <>
-              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+              <video
+                src="src/assets/videos/Comp 1-VEED (2).mp4"
+                // width="1440"
+                // height="300"
+                controls
+                autoPlay
+                className="video-comp"
+              />
               <TypeAnimation
                 style={{
                   whiteSpace: "pre-line",
                   height: "195px",
-                  display: "block",
+                  //   display: "block",
                   textAlign: "center",
                   direction: "rtl",
+                  display: "flex",
                 }}
                 sequence={[
-                  ` באמצעות השימוש בגלגלת, הורדתי את העומס על חבל המשיכה בחצי, כלומר-רווח כוח 2 \n 
+                  ` באמצעות השימוש בגלגלת, הורדתי את העומס על חבל המשיכה בחצי, כלומר-רווח כוח 2  
                   רווח כוח- היחס בין הכוח שאני מפעיל לכוח שמרגיש מטען החילוץ `,
                   100,
                 ]}
-                speed={1}
+                speed={1000}
                 cursor={false}
               />
             </>
@@ -297,14 +297,22 @@ function Power(props) {
       {pageNumber === 4 ? (
         <>
           <h2>קצת על גלגלות</h2>
-          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <video
+            src="src/assets/videos/Comp 2.mp4"
+            // width="1440"
+            // height="300"
+            controls
+            autoPlay
+            className="video-comp"
+          />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              //   display: "block",
               textAlign: "center",
               direction: "rtl",
+              display: "contents",
             }}
             sequence={[
               `גלגלת הקרובה לעגינה : גלגלת סטטית אשר אינה נעה במהלך המשיכה יוצרת שינוי כיוון(ללא יתרון כוח)
@@ -313,7 +321,7 @@ function Power(props) {
 `,
               100,
             ]}
-            speed={1}
+            speed={1000}
             cursor={false}
           />
           <div className="move-btns-p">
@@ -331,12 +339,12 @@ function Power(props) {
       {pageNumber === 5 ? (
         <>
           <h2>בואו נתרגל קצת</h2>
-          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <img className="image2" src="src/assets/רווח כוח 3.png" />
           <TypeAnimation
             style={{
-              whiteSpace: "pre-line",
-              height: "195px",
-              display: "block",
+              //   whiteSpace: "pre-line",
+              //   height: "195px",
+              display: "flex",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -348,33 +356,40 @@ function Power(props) {
               100,
               () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1}
+            speed={1000}
             cursor={false}
           />
 
           {showTimer1 ? (
-            <div>
+            <>
               {isTimeUp ? (
                 <>
-                  <h2>!הזמן נגמר</h2>
+                  <h2 className="header-timer1">!הזמן נגמר</h2>
                 </>
               ) : (
                 <>
-                  <h2>{timeLeft}</h2>
+                  <h2 className="header-timer1">{timeLeft}</h2>
                 </>
               )}
-            </div>
+            </>
           ) : (
             <></>
           )}
           {timeLeft === 0 ? (
             <>
-              <img className="image1" src="src/assets/photos/חסר סדרן.jpg" />
+              <video
+                src="src/assets/videos/Comp 3.mp4"
+                // width="1440"
+                // height="300"
+                controls
+                autoPlay
+                className="video-comp"
+              />
               <TypeAnimation
                 style={{
                   whiteSpace: "pre-line",
                   height: "195px",
-                  display: "block",
+                  display: "contents",
                   textAlign: "center",
                   direction: "rtl",
                 }}
@@ -382,7 +397,7 @@ function Power(props) {
                   `במערכת זו לקחנו את מערכת רווח כוח 3 והוספנו 2 גלגלות -גלגלת אחת סטטית וגלגלת אחת דינמית ובסוף יצא רווח כוח 5`,
                   100,
                 ]}
-                speed={1}
+                speed={1000}
                 cursor={false}
               />
             </>
@@ -405,12 +420,12 @@ function Power(props) {
       {pageNumber === 6 ? (
         <>
           <h2>בואו נתרגל קצת</h2>
-          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <img className="image2" src="src/assets/רווח כוח 3.png" />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "block",
+              display: "contents",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -422,7 +437,7 @@ function Power(props) {
               100,
               () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1}
+            speed={1000}
             cursor={false}
           />
 
@@ -430,11 +445,11 @@ function Power(props) {
             <div>
               {isTimeUp ? (
                 <>
-                  <h2>!הזמן נגמר</h2>
+                  <h2 className="header-timer">!הזמן נגמר</h2>
                 </>
               ) : (
                 <>
-                  <h2>{timeLeft}</h2>
+                  <h2 className="header-timer">{timeLeft}</h2>
                 </>
               )}
             </div>
@@ -443,12 +458,19 @@ function Power(props) {
           )}
           {timeLeft === 0 ? (
             <>
-              <img className="image1" src="src/assets/photos/חסר סדרן.jpg" />
+              <video
+                src="src/assets/videos/Comp 4.mp4"
+                // width="1440"
+                // height="300"
+                controls
+                autoPlay
+                className="video-comp"
+              />
               <TypeAnimation
                 style={{
-                  whiteSpace: "pre-line",
-                  height: "195px",
-                  display: "block",
+                  //   whiteSpace: "pre-line",
+                  //   height: "195px",
+                  display: "contents",
                   textAlign: "center",
                   direction: "rtl",
                 }}
@@ -456,7 +478,7 @@ function Power(props) {
                   `על חבל המשיכה בניתי מערכת רווח כוח 3 נוספת ובכך הכפלתי את הכוח מרווח כוח 3 לרווח כוח 9 (3 בריבוע)`,
                   100,
                 ]}
-                speed={1}
+                speed={1000}
                 cursor={false}
               />
             </>

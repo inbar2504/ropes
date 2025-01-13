@@ -28,5 +28,21 @@
   transform: translateX(-50%);
 }
 .image1 {
-  width: 50vw;
+  height: 45vh;
+}
+.image2 {
+    height: 25vh;
+  }
+.video-comp {
+    /* width: 50vw; */
+    height: 25vh;
+    margin-top: 2vh;
+}
+.header-timer {
+    margin-top: -5vh;
+    margin-bottom: 0vh;
+}
+.header-timer1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
 }

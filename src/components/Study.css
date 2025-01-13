@@ -29,7 +29,13 @@ html,#root,body {
     text-align: center;
 }
 .study-page {
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
 }
 .swiper-horizontal::part() {
@@ -140,4 +146,32 @@ html,#root,body {
 }
 .red-text {
   color: rgb(114, 24, 24);
+}
+.img-glisha {
+  width: 70%;
+
+}
+.card-img {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.question-btn {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 70vw;
+  height: 10vh;
+  font-family: "avram";
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2%;
+  font-size: 5vmin;
+}
+.answer-result {
+  font-size: 5vmin;
+  width: 90vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }

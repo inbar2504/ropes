@@ -1,0 +1,511 @@
+import React, { useState, Component, useRef, useEffect } from "react";
+import "./Power.css";
+// import Typewriter from 'typewriter-effect/dist/core';
+import { TypeAnimation } from "react-type-animation";
+import Swal from "sweetalert2";
+
+function Power(props) {
+  const [pageNumber, setPageNumber] = useState(0);
+  const [finish3, setFinish3] = useState("false");
+  const [timeLeft, setTimeLeft] = useState(3);
+  const [isTimeUp, setIsTimeUp] = useState(false);
+  const [timerRunning, setTimerRunning] = useState(false); // כדי למנוע הפעלה כפולה של הטיימר
+  const [showImage1, setShowImage1] = useState(false);
+  const [showTimer1, setShowTimer1] = useState(false);
+  const [showImage2, setShowImage2] = useState(false);
+  const num = 0;
+  //   const [showTimer2, setShowTimer2] = useState(false);
+  const resetAll = (num) => {
+    // setTimeLeft(3);
+    setTimerRunning(false);
+    setIsTimeUp(false);
+    setShowImage1(false);
+    setShowTimer1(false);
+    setShowImage2(false);
+    setPageNumber(num);
+  };
+  const startTimer = () => {
+    console.log("hilo");
+    setShowTimer1(true);
+    // setShowTimer1();
+    setTimeLeft(3); // אתחול הזמן ל-3 שניות
+    setIsTimeUp(false); // אתחול הודעת הזמן נגמר
+    setTimerRunning(true); // סימן שהטיימר רץ
+  };
+
+  useEffect(() => {
+    let timer;
+    if (timerRunning && timeLeft > 0) {
+      timer = setInterval(() => {
+        setTimeLeft((prevTime) => prevTime - 1);
+      }, 1000);
+    } else if (timeLeft === 0) {
+      setIsTimeUp(true); // ברגע שהזמן נגמר, מציגים את "הזמן נגמר!"
+      setTimerRunning(false); // מפסיקים את הטיימר
+    }
+
+    return () => {
+      clearInterval(timer); // מניעת זליגה של טיימרים כשהקומפוננטה לא פעילה
+    };
+  }, [timeLeft, timerRunning]); // התראה כאשר משתנה timeLeft או timerRunning
+
+  useEffect(() => {
+    if (finish3 === "true") {
+      Swal.fire({
+        title: "כל הכבוד",
+        text: "סיימת את החלק של הפיסיקה! אם עשית את זה ,השאר קטן עלייך",
+        icon: "success",
+        heightAuto: false,
+        confirmButtonText: "לחזרה לעמוד הבית",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.reload();
+        }
+      });
+    }
+  }, [finish3]);
+
+  return (
+    <div className="power">
+      {pageNumber === 0 ? (
+        <>
+          <h1>רווח כוח</h1>
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            // ['One', 1000, 'Two', () => console.log("done")]
+            sequence={[
+              `
+                      עקרון רווח הכוח מתאר את היכולת להגדיל את הכוח או האנרגיה במערכת בצורה יעילה, באמצעות שיפור ביצועים או אופטימיזציה של תהליכים טכנולוגיים או פיזיקליים\n 
+              יאללה לחצו על כפתור "הבא" על מנת להתחיל את החלק המעניין יותר
+                      `,
+              1000,
+            ]}
+            // speed={50}
+            // repeat={0}
+          />
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => props.setShow("start")}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNumber(1)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 1 ? (
+        <>
+          <h2>למה אנחנו בכלל נוגעים ברווח כוח</h2>
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              "כאשר אנו מנסים להרים מטען כבד אותו לא ניתן להרים באמצעות כוח ידיים, נבנה מערכת גלגלות באמצעותה נוכל להכפיל את הכוח שאנו מפעילים ונהפוך את תהליך ההרמה לקל יותר.",
+              1000, // הפסקה של שנייה
+              () => {
+                setShowImage1(true);
+              },
+            ]}
+          />
+          {showImage1 ? (
+            <>
+              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+            </>
+          ) : (
+            <></>
+          )}
+
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => setPageNumber(0)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNumber(2)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 2 ? (
+        <>
+          <h2>?איך עובדת גלגלת</h2>
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי. 
+            העומס על החבלים אשר יוצא משני צידי הגלגלת יהיה שווה
+            ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים. .במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
+            
+            נגדיר את העומס שעל החבל כ-T`,
+              100,
+              () => {
+                setShowImage2(true);
+              },
+            ]}
+            cursor={false}
+          />
+          <br />
+          <br />
+          {showImage2 ? (
+            <>
+              <br />
+              <br />
+              <br />
+              <br />
+              <video
+                src="src/assets/videos/Comp 1-VEED (2).mp4"
+                width="1440"
+                height="300"
+                controls
+              />
+              {/* <video width="320" height="240" controls>
+                <source src="src/assets/videos/comp 1.mp4" type="video/mp4">
+            
+                Your browser does not support the video tag.
+              </video> */}
+              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+              <br />
+              <TypeAnimation
+                style={{
+                  whiteSpace: "pre-line",
+                  height: "195px",
+                  display: "block",
+                  textAlign: "center",
+                  direction: "rtl",
+                }}
+                sequence={[
+                  "בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) ",
+                  100,
+                ]}
+                cursor={false}
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => setPageNumber(1)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNumber(3)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 3 ? (
+        <>
+          <h2>בואו נתרגל קצת</h2>
+
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              `התבקשתי להרים אדם השוקל T. 
+           \n חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
+           \n רמז : העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
+           \n התשובה תופיע בעוד `,
+              100,
+              () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+            ]}
+            speed={1}
+            cursor={false}
+          />
+
+          {showTimer1 ? (
+            <div>
+              {isTimeUp ? (
+                <>
+                  <br />
+                  <br />
+                  <h2>!הזמן נגמר</h2>
+                </>
+              ) : (
+                <>
+                  <br />
+                  <br />
+                  <h2>{timeLeft}</h2>
+                </>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
+          {timeLeft === 0 ? (
+            <>
+              <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+              <TypeAnimation
+                style={{
+                  whiteSpace: "pre-line",
+                  height: "195px",
+                  display: "block",
+                  textAlign: "center",
+                  direction: "rtl",
+                }}
+                sequence={[
+                  ` באמצעות השימוש בגלגלת, הורדתי את העומס על חבל המשיכה בחצי, כלומר-רווח כוח 2 \n 
+                  רווח כוח- היחס בין הכוח שאני מפעיל לכוח שמרגיש מטען החילוץ `,
+                  100,
+                ]}
+                speed={1}
+                cursor={false}
+              />
+            </>
+          ) : (
+            <></>
+          )}
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => resetAll(2)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => resetAll(4)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 4 ? (
+        <>
+          <h2>קצת על גלגלות</h2>
+          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              `גלגלת הקרובה לעגינה : גלגלת סטטית אשר אינה נעה במהלך המשיכה יוצרת שינוי כיוון(ללא יתרון כוח)
+\n 
+הגלגלת הרחוקה מהעגינה : גלגלת דינמית אשר הינה יוצרת יתרון כוח
+`,
+              100,
+            ]}
+            speed={1}
+            cursor={false}
+          />
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => setPageNumber(3)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNumber(5)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 5 ? (
+        <>
+          <h2>בואו נתרגל קצת</h2>
+          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              ` ?כמה רווח כוח יש לנו בתמונה
+              \n
+              התשובה  תופיע בעוד
+              `,
+              100,
+              () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+            ]}
+            speed={1}
+            cursor={false}
+          />
+
+          {showTimer1 ? (
+            <div>
+              {isTimeUp ? (
+                <>
+                  <h2>!הזמן נגמר</h2>
+                </>
+              ) : (
+                <>
+                  <h2>{timeLeft}</h2>
+                </>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
+          {timeLeft === 0 ? (
+            <>
+              <img className="image1" src="src/assets/photos/חסר סדרן.jpg" />
+              <TypeAnimation
+                style={{
+                  whiteSpace: "pre-line",
+                  height: "195px",
+                  display: "block",
+                  textAlign: "center",
+                  direction: "rtl",
+                }}
+                sequence={[
+                  `במערכת זו לקחנו את מערכת רווח כוח 3 והוספנו 2 גלגלות -גלגלת אחת סטטית וגלגלת אחת דינמית ובסוף יצא רווח כוח 5`,
+                  100,
+                ]}
+                speed={1}
+                cursor={false}
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => resetAll(4)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => resetAll(6)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 6 ? (
+        <>
+          <h2>בואו נתרגל קצת</h2>
+          <img className="image1" src="src/assets/photos/חסר טבעת.jpg" />
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "block",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              `בנינו מערכת רווח כוח 3 איך אוכל להכפיל את הכוח?
+              \n
+              התשובה  תופיע בעוד
+              `,
+              100,
+              () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+            ]}
+            speed={1}
+            cursor={false}
+          />
+
+          {showTimer1 ? (
+            <div>
+              {isTimeUp ? (
+                <>
+                  <h2>!הזמן נגמר</h2>
+                </>
+              ) : (
+                <>
+                  <h2>{timeLeft}</h2>
+                </>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
+          {timeLeft === 0 ? (
+            <>
+              <img className="image1" src="src/assets/photos/חסר סדרן.jpg" />
+              <TypeAnimation
+                style={{
+                  whiteSpace: "pre-line",
+                  height: "195px",
+                  display: "block",
+                  textAlign: "center",
+                  direction: "rtl",
+                }}
+                sequence={[
+                  `על חבל המשיכה בניתי מערכת רווח כוח 3 נוספת ובכך הכפלתי את הכוח מרווח כוח 3 לרווח כוח 9 (3 בריבוע)`,
+                  100,
+                ]}
+                speed={1}
+                cursor={false}
+              />
+            </>
+          ) : (
+            <></>
+          )}
+
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => resetAll(5)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => resetAll(7)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 7 ? (
+        <>
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => setPageNumber(6)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNumber(8)}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+      {pageNumber === 8 ? (
+        <>
+          <div className="move-btns-p">
+            <button className="last-btn" onClick={() => setPageNumber(7)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setFinish3("true")}>
+              הבא
+            </button>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+    </div>
+  );
+}
+
+export default Power;

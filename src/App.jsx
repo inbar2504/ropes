@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import './App.css'
 import Study from "./components/Study";
+import Test from "./components/Test";
+import Power from "./components/Power";
 
 function App() {
   const [show, setShow] = useState("start");
-  
+
   return (
     <div className="start">
  <>
@@ -19,14 +21,27 @@ function App() {
           </div>
           <div className='btn-start-place'>
             <button className='btn-start' onClick={() => setShow("test")}>בא לי להיבחן</button>
-            <button className='btn-start' onClick={() => setShow("study")}>יאללה, אני רוצה ללמוד</button>
+            <button className='btn-start' onClick={() => setShow("study")}>יאללה, ללמוד</button>
+            <button className='btn-start' onClick={() => setShow("power")}>תנו לי רווח כוח</button>
           </div>
         </>
       ) : (
         <></>
       )}
       {show === 'study' ? (
-        <Study/>
+        <Study setShow={setShow}/>
+      ) : (
+        <></>
+      )
+    }
+    {show === 'test' ? (
+        <Test setShow={setShow}/>
+      ) : (
+        <></>
+      )
+    }
+     {show === 'power' ? (
+        <Power setShow={setShow}/>
       ) : (
         <></>
       )

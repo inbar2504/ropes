@@ -168,7 +168,7 @@ body {
   justify-content: space-between;
   width: 80vw;
   position: relative;
-  top: 85vh;
+  top: 80vh;
   /* top: -5vh;  */
 }
 .red-text {
@@ -185,6 +185,7 @@ body {
 }
 .question-btn {
   background-color: #ffffff;
+  color: black;
   border-radius: 15px;
   width: 70vw;
   height: 10vh;
@@ -192,7 +193,7 @@ body {
   border: none;
   cursor: pointer;
   margin-bottom: 2%;
-  font-size: 3vmin;
+  font-size: 5vmin;
 }
 .answer-result {
   font-size: 5vmin;

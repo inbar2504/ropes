@@ -116,6 +116,7 @@ body {
 
 .btn-start {
   background-color: #f7a619;
+  color: black;
   border-radius: 15px;
   width: 55vw;
   height: 7vh;
@@ -123,7 +124,7 @@ body {
   border: none;
   cursor: pointer;
   margin: 4%;
-  font-size: 5vmin;
+  font-size: 3vmin;
 }
 
 .btn-start:hover {

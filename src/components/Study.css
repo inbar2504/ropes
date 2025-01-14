@@ -10,25 +10,34 @@ body {
   /* align-items: center; */
   /* justify-content: space-between;  */
 }
-html,#root,body {
-    height: 100vh;
-    margin: 0;
-  }
+html,
+#root,
+body {
+  height: 100vh;
+  margin: 0;
+}
 .study {
-    z-index: 1000;
-    background-image: url(../assets/background2.jpg);
-    background-size: 100% 100%;
-    height: 100vh;
-    display: flex;
-    font-family: "avram";
-    overflow: hidden;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    justify-content: space-between; 
-    text-align: center;
+  z-index: 1000;
+  background-image: url(../assets/background2.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "avram";
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
 }
 .study-page {
+  /* display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
   display: flex;
   position: relative;
   flex-direction: column;
@@ -36,7 +45,10 @@ html,#root,body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
+  position: absolute;
+  /* top: 80vh; */
+  left: 50%;
+  transform: translateX(-50%);
 }
 .swiper-horizontal::part() {
   touch-action: pan-y;
@@ -88,12 +100,13 @@ html,#root,body {
   /* border-color: #083b4c; */
   /* border: 2px solid #083b4c; */
 }
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44* 27);
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
   height: var(--swiper-navigation-size);
-  margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
   display: flex;
@@ -101,7 +114,8 @@ html,#root,body {
   justify-content: center;
   color: var(#083b4c, #083b4c);
 }
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
@@ -112,22 +126,24 @@ html,#root,body {
 }
 .text {
   position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  font-size: 5vmin;
 }
 .text-small {
   position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    font-size: 4vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  font-size: 4vmin;
 }
-.next-btn, .last-btn {
+.next-btn,
+.last-btn {
   background-color: #f7a619;
+  color: black;
   border-radius: 15px;
   width: 20vw;
   height: 7vh;
@@ -138,18 +154,28 @@ html,#root,body {
   font-size: 5vmin;
 }
 .move-btns {
+  /* display: flex;
+  color: black;
+  width: 80vw;
+  position: absolute;
+  top: 100vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center; */
   display: flex;
-  justify-content: space-between; /* הכפתורים יפוזרו בין הקצוות */
-  width: 80vw; /* לקבוע רוחב של 80% מהמסך */
+  justify-content: space-between;
+  width: 80vw;
   position: relative;
-  top: -5vh; /* להניח את הכפתורים בתחתית הדף עם רווח מלמטה */
+  top: 85vh;
+  /* top: -5vh;  */
 }
 .red-text {
   color: rgb(114, 24, 24);
 }
 .img-glisha {
   width: 70%;
-
 }
 .card-img {
   display: flex;

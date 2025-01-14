@@ -10,7 +10,6 @@ import { ScratchCard } from "../assets/react-scratchcard";
 import Swal from "sweetalert2";
 
 function Study(props) {
-  
   const [pageNum, setPageNum] = useState(0);
   const [answer1, setAnswer1] = useState("");
   const [answer2, setAnswer2] = useState("");
@@ -70,56 +69,44 @@ function Study(props) {
             >
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 1
-                  </b>
+                  <b>שלב 1</b>
                   <br />
                   <br />
-                   לאחר ווידוא חיבורים וקבלת אישור מהמחלץ התחל בהרמה באמצעות
+                  לאחר ווידוא חיבורים וקבלת אישור מהמחלץ התחל בהרמה באמצעות
                   מכונת ההרמה(אקטסייף) בחבל הראשי
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 2
-                  </b>
+                  <b>שלב 2</b>
                   <br />
                   <br />
-                   יש לצמצם את החבל המשני דרך המאסטרו על ידי משיכת החבל הרפוי
+                  יש לצמצם את החבל המשני דרך המאסטרו על ידי משיכת החבל הרפוי
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 3
-                  </b>
+                  <b>שלב 3</b>
                   <br />
                   <br />
-                   במידה ובחבל המשני קיים אמצעי חיכוך פתוח,יש לצמצם את האמצעי
+                  במידה ובחבל המשני קיים אמצעי חיכוך פתוח,יש לצמצם את האמצעי
                   באופן שיבטיח החזקה של החבל ביד בכל רגע נתון
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text-small">
-                  <b>
-                    שלב 4
-                  </b>
+                  <b>שלב 4</b>
                   <br />
-                 
-                 במקרה של עצירת המכונה בשל עומס מקסימלי , יש לפעול לפי הסדר
-                  הבא<br></br>
+                  במקרה של עצירת המכונה בשל עומס מקסימלי , יש לפעול לפי הסדר הבא
+                  <br></br>
                   בדוק כי שום אמצעי לא נתקע ושהחבלים עוברים בשפת המצוק על מקטיני
-                  חיכוך,אם לא,תקן את הבעיה והמשך להרים. אם 
-                   לא זיהית בעיה ניתן לעזור למכונה למשוך בחלקים הקשים על ידי
-                  משיכת החבל המתוח לתוך המכונה, או על ידי חיבור טיבלוק ורולקליפ
-                  לחבל ההרמה המתוח ולעזור למכונה בהרמה על ידי משיכת החבל ברווח
-                  כוח 3. אל
-                 תעזור למכונה לאורך כל ההרמה אלא רק בקטעים
-                  הקשים
+                  חיכוך,אם לא,תקן את הבעיה והמשך להרים. אם לא זיהית בעיה ניתן
+                  לעזור למכונה למשוך בחלקים הקשים על ידי משיכת החבל המתוח לתוך
+                  המכונה, או על ידי חיבור טיבלוק ורולקליפ לחבל ההרמה המתוח
+                  ולעזור למכונה בהרמה על ידי משיכת החבל ברווח כוח 3. אל תעזור
+                  למכונה לאורך כל ההרמה אלא רק בקטעים הקשים
                 </div>
               </SwiperSlide>
-              
             </Swiper>
           </div>
           <div className="move-btns">
@@ -149,59 +136,48 @@ function Study(props) {
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
-             
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 1
-                  </b>
+                  <b>שלב 1</b>
                   <br />
                   <br />
-                   ניתן לעבור לצמצום/הרמה ללא רווח כוח על ידי משיכת החבל
-                  לכיוון הגוגל-מוגל
+                  ניתן לעבור לצמצום/הרמה ללא רווח כוח על ידי משיכת החבל לכיוון
+                  הגוגל-מוגל
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 2
-                  </b>
+                  <b>שלב 2</b>
                   <br />
                   <br />
-                   בניית רווח כוח-חבר על כל חבל טיבלוק ולכל טיבלוק חבר טבעת +
+                  בניית רווח כוח-חבר על כל חבל טיבלוק ולכל טיבלוק חבר טבעת +
                   סופג אנרגיה + רולקליפ
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 3
-                  </b>
+                  <b>שלב 3</b>
                   <br />
                   <br />
-                   שני המשלוחים ימשכו כל אחד את החבל שלו בתיאום מושלם על מנת
+                  שני המשלוחים ימשכו כל אחד את החבל שלו בתיאום מושלם על מנת
                   להרים ברווח כוח 6(רווח כוח 3 על כל חבל=רווח כוח 6 על כל
                   המערכת)
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 4
-                  </b>
+                  <b>שלב 4</b>
                   <br />
                   <br />
-                 לא נדרש לאחוז בידית של המאסטרו במהלך ההרמה
+                  לא נדרש לאחוז בידית של המאסטרו במהלך ההרמה
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="text">
-                  <b>
-                    שלב 5
-                  </b>
+                  <b>שלב 5</b>
                   <br />
                   <br />
-                 המאסטרו ננעל אוטומטית
+                  המאסטרו ננעל אוטומטית
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -386,7 +362,7 @@ function Study(props) {
       )}
       {pageNum === 4 ? (
         <>
-        <div className="study-page">
+          <div className="study-page">
             <h1>חבלים 3</h1>
 
             <h2>"גולש אחרון"</h2>
@@ -438,7 +414,6 @@ function Study(props) {
                   <b>שלב 4</b>
                   <br />
                   <br />
-                  
                   :בניית נוהל גולש אחרון
                   <br />
                   א. שלב זה יחל לאחר שנשארו רק שלושה או ארבעה לוחמים ליד העגינות
@@ -460,7 +435,6 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
-                  
                   בצע בדיקת משיכה ומעבר הקשר את שפת המצוק
                   <br />
                   א. לוחם שמשמש כבקר התחתון מחבר בקשר פלמי את שתי הקצוות שלמטה
@@ -479,7 +453,6 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
-                 
                   ניצור לולאה אלפינית על שני החבלים ונחבר אותה לשקול (האלפיני
                   צריך להיות בבוש על מנת שהעומס יהיה על העיגון הסופי)
                 </div>
@@ -553,7 +526,6 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
- 
                   בצעו בדיקה הדדית וגלוש למטה
                 </div>
               </SwiperSlide>
@@ -564,7 +536,6 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
-
                   בהגעתך אל הקרקע התנתק מהחבלים
                 </div>
               </SwiperSlide>
@@ -575,7 +546,6 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
-
                   פתח את הפלמי התחתון, לא את הקשר האלפיני
                 </div>
               </SwiperSlide>
@@ -586,49 +556,46 @@ function Study(props) {
                     <br />
                   </b>
                   <br />
-
                   משוך בחבל המסומן בקשר אלפיני תוך כדי התרחקות מהמצוק ופתיחת
                   זווית
                 </div>
               </SwiperSlide>
             </Swiper>
           </div>
-        <div className="move-btns">
-           <button className="last-btn" onClick={() => setPageNum(3)}>
-             הקודם
-           </button>
-           <button className="next-btn" onClick={() => setPageNum(5)}>
-             הבא
-           </button>
-         </div>
-       
-      </>
-       
+          <div className="move-btns">
+            <button className="last-btn" onClick={() => setPageNum(3)}>
+              הקודם
+            </button>
+            <button className="next-btn" onClick={() => setPageNum(5)}>
+              הבא
+            </button>
+          </div>
+        </>
       ) : (
         <></>
       )}
       {pageNum === 5 ? (
         <>
           <div className="study-page">
-          <h1>חבלים 3</h1>
+            <h1>חבלים 3</h1>
 
-          <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
-          <img
-            className="img-glisha"
-            src="src/assets/photos/חסר טבעת.jpg"
-            alt="תמונה של עמדת גלישה"
-          />
-          <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
-          <div className="card-img">
-            <ScratchCard finishPercent={100} brushSize={20}>
-              <img
-                height={150}
-                width={300}
-                src="src/assets/photos/טבעת.jpg"
-              />
-            </ScratchCard>
+            <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
+            <img
+              src="/חסר טבעת.jpg"
+              // src="src/assets/photos/חסר טבעת.JPG"
+              alt="תמונה של עמדת גלישה"
+            />
+            <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
+            <div className="card-img">
+              <ScratchCard finishPercent={100} brushSize={20}>
+                <img
+                  height={150}
+                  width={300}
+                  src="src/assets/photos/טבעת.jpg"
+                />
+              </ScratchCard>
+            </div>
           </div>
-        </div>
           <div className="move-btns">
             <button className="last-btn" onClick={() => setPageNum(4)}>
               הקודם
@@ -642,8 +609,8 @@ function Study(props) {
         <></>
       )}
       {pageNum === 6 ? (
-         <>
-         <div className="study-page">
+        <>
+          <div className="study-page">
             <h1>חבלים 3</h1>
 
             <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
@@ -663,45 +630,11 @@ function Study(props) {
               </ScratchCard>
             </div>
           </div>
-         <div className="move-btns">
-          <button className="last-btn" onClick={() => setPageNum(5)}>
-            הקודם
-          </button>
-          <button className="next-btn" onClick={() => setPageNum(7)}>
-            הבא
-          </button>
-        </div>
-       </>
-      ) : (
-        <></>
-      )}
-      {pageNum === 7 ? (
-        <>
-          <div className="study-page">
-           <h1>חבלים 3</h1>
-
-           <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
-           <img
-             className="img-glisha"
-             src="src/assets/glisha.webp"
-             alt="תמונה של עמדת גלישה"
-           />
-           <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
-           <div className="card-img">
-             <ScratchCard finishPercent={100} brushSize={20}>
-               <img
-                 height={150}
-                 width={300}
-                 src="https://images.pexels.com/photos/14686115/pexels-photo-14686115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-               />
-             </ScratchCard>
-           </div>
-         </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(6)}>
+            <button className="last-btn" onClick={() => setPageNum(5)}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNum(8)}>
+            <button className="next-btn" onClick={() => setPageNum(7)}>
               הבא
             </button>
           </div>
@@ -709,18 +642,21 @@ function Study(props) {
       ) : (
         <></>
       )}
-      {pageNum === 8 ? (
+      {pageNum === 7 ? (
         <>
-         <div className="study-page">
+          <div className="study-page">
             <h1>חבלים 3</h1>
             <div>
-              <h2>איך יודעים איפה שקול הוקטורים בחצובה(כיוון הכוח של העומס  שמופעל על החצובה)</h2>
+              <h2>
+                איך יודעים איפה שקול הוקטורים בחצובה(כיוון הכוח של העומס שמופעל
+                על החצובה)
+              </h2>
               <button
                 className="question-btn"
                 id="btn1"
                 onClick={() => answerClick1("תשובה נכונה! יפה מאוד", "btn1")}
               >
-                לפי הכיוון שהגלגלת של ראש החצובה תצביע עליו 
+                לפי הכיוון שהגלגלת של ראש החצובה תצביע עליו
               </button>
               <button
                 className="question-btn"
@@ -762,11 +698,12 @@ function Study(props) {
               <h3 className="answer-result">{answer1}</h3>
             </div>
           </div>
+
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(7)}>
+            <button className="last-btn" onClick={() => setPageNum(6)}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNum(9)}>
+            <button className="next-btn" onClick={() => setPageNum(8)}>
               הבא
             </button>
           </div>
@@ -774,7 +711,7 @@ function Study(props) {
       ) : (
         <></>
       )}
-      {pageNum === 9 ? (
+      {pageNum === 8 ? (
         <>
           <div className="study-page">
             <h1>חבלים 3</h1>
@@ -797,8 +734,8 @@ function Study(props) {
                 id="btn02"
                 onClick={() => answerClick2("תשובה נכונה! יפה מאוד", "btn02")}
               >
-                בתוך המשולש של החצובה         
-                 </button>
+                בתוך המשולש של החצובה
+              </button>
               <button
                 className="question-btn"
                 id="btn03"
@@ -806,7 +743,7 @@ function Study(props) {
                   answerClick2(
                     "תשובה לא נכונה, התשובה הנכונה הינה: בתוך המשולש של החצובה",
                     "btn03"
-                  )               
+                  )
                 }
               >
                 זה לא משנה
@@ -815,7 +752,7 @@ function Study(props) {
             </div>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(8)}>
+            <button className="last-btn" onClick={() => setPageNum(7)}>
               הקודם
             </button>
             <button className="next-btn" onClick={() => setFinish1("true")}>

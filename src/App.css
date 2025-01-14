@@ -130,3 +130,6 @@ body {
 .btn-start:hover {
   background-color: #e68913; /* שינוי צבע כאשר העכבר מעל הכפתור */
 }
+button {
+  font-family: "avram" !important;
+}

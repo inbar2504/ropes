@@ -4,7 +4,7 @@
     border-radius: 15px;
     padding: 20px;
     display: flex;
-    font-family: "avram";
+    font-family: "avram" !important;
     flex-direction: column;
     position: relative;
     top: 50%;

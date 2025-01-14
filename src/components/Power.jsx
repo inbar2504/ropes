@@ -413,7 +413,7 @@ function Power(props) {
       {pageNumber === 6 ? (
         <>
           <h2>בואו נתרגל קצת</h2>
-          <img className="image2" src="src/assets/revah3.png" />
+          <img className="image2" src="assets/revah3.png" />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
@@ -456,7 +456,7 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="assets/video/4.mp4"
+                src="assets/video/04.mp4"
                 // width="1440"
                 // height="300"
                 controls

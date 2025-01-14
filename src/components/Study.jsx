@@ -582,7 +582,6 @@ function Study(props) {
             <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
-              // src="./חסר טבעת.JPG"
               src="assets/noRing.jpg"
               alt="תמונה של עמדת גלישה"
             />
@@ -613,7 +612,7 @@ function Study(props) {
             <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
-              src="src/assets/photos/sadran1.jpg"
+              src="assets/sadran1.jpg"
               alt="תמונה של עמדת גלישה"
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
@@ -622,7 +621,7 @@ function Study(props) {
                 <img
                   height={150}
                   width={300}
-                  src="src/assets/photos/sadran.jpg"
+                  src="assets/sadran.jpg"
                 />
               </ScratchCard>
             </div>

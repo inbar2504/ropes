@@ -75,7 +75,6 @@ function Power(props) {
               textAlign: "center",
               direction: "rtl",
             }}
-            // ['One', 1000, 'Two', () => console.log("done")]
             sequence={[
               `
                       עקרון רווח הכוח מתאר את היכולת להגדיל את הכוח או האנרגיה במערכת בצורה יעילה, באמצעות שיפור ביצועים או אופטימיזציה של תהליכים טכנולוגיים או פיזיקליים\n 
@@ -90,7 +89,7 @@ function Power(props) {
             <button className="last-btn" onClick={() => props.setShow("start")}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNumber(1)}>
+            <button className="next-btn" onClick={() => resetAll(1)}>
               הבא
             </button>
           </div>
@@ -119,17 +118,17 @@ function Power(props) {
           />
           {showImage1 ? (
             <>
-              <img className="image1" src="src/assets/one.png" />
+              <img className="image1" src="assets/one.png" />
             </>
           ) : (
             <></>
           )}
 
           <div className="move-btns-p">
-            <button className="last-btn" onClick={() => setPageNumber(0)}>
+            <button className="last-btn" onClick={() => resetAll(0)}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNumber(2)}>
+            <button className="next-btn" onClick={() => resetAll(2)}>
               הבא
             </button>
           </div>
@@ -166,7 +165,7 @@ function Power(props) {
           {showImage2 ? (
             <>
               <video
-                src="src/assets/video/1.mp4"
+                src="assets/video/1.mp4"
                 // width="1440"
                 // height="300"
                 controls
@@ -195,10 +194,10 @@ function Power(props) {
           )}
 
           <div className="move-btns-p">
-            <button className="last-btn" onClick={() => setPageNumber(1)}>
+            <button className="last-btn" onClick={() => resetAll(1)}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNumber(3)}>
+            <button className="next-btn" onClick={() => resetAll(3)}>
               הבא
             </button>
           </div>
@@ -249,7 +248,7 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/video/1.mp4"
+                src="assets/video/1.mp4"
                 // width="1440"
                 // height="300"
                 controls
@@ -293,7 +292,7 @@ function Power(props) {
         <>
           <h2>קצת על גלגלות</h2>
           <video
-            src="src/assets/video/2.mp4"
+            src="assets/video/2.mp4"
             // width="1440"
             // height="300"
             controls
@@ -320,10 +319,10 @@ function Power(props) {
             cursor={false}
           />
           <div className="move-btns-p">
-            <button className="last-btn" onClick={() => setPageNumber(3)}>
+            <button className="last-btn" onClick={() => resetAll(3)}>
               הקודם
             </button>
-            <button className="next-btn" onClick={() => setPageNumber(5)}>
+            <button className="next-btn" onClick={() => resetAll(5)}>
               הבא
             </button>
           </div>
@@ -334,7 +333,7 @@ function Power(props) {
       {pageNumber === 5 ? (
         <>
           <h2>בואו נתרגל קצת</h2>
-          <img className="image2" src="src/assets/רווח כוח 3.png" />
+          <img className="image2" src="assets/revah3.png" />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
@@ -372,7 +371,7 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/video/Comp 3.mp4"
+                src="assets/video/3.mp4"
                 // width="1440"
                 // height="300"
                 controls
@@ -414,7 +413,7 @@ function Power(props) {
       {pageNumber === 6 ? (
         <>
           <h2>בואו נתרגל קצת</h2>
-          <img className="image2" src="src/assets/רווח כוח 3.png" />
+          <img className="image2" src="src/assets/revah3.png" />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
@@ -457,7 +456,7 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/video/4.mp4"
+                src="assets/video/4.mp4"
                 // width="1440"
                 // height="300"
                 controls
@@ -499,7 +498,7 @@ function Power(props) {
       {pageNumber === 7 ? (
         <>
           <h2>חידה</h2>
-          <img className="image2" src="src/assets/רווח כוח 3.png" />
+          <img className="image2" src="assets/revah3.png" />
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",

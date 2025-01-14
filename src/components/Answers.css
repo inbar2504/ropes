@@ -1,34 +1,30 @@
-
-.answers{
-    font-family: 'avram';
+.answers {
+  font-family: "avram";
 }
 
-
-.css-rizt0-MuiTypography-root  {
-    font-family: 'avram' !important;
-
+.css-rizt0-MuiTypography-root {
+  font-family: "avram" !important;
 }
 .center-header {
-
-    text-align: center;
+  text-align: center;
 }
 #end-btn2 {
-    background-color: #f7a619;
-    border: none;
-    border-radius: 20px;
-    font-family: 'avram';
-    padding: 3%;
-    font-size: 5vmin;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 4%;
+  background-color: #f7a619;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-family: "avram";
+  padding: 3%;
+  font-size: 5vmin;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4%;
 }
 
-.incorrect { 
-    color: red !important;
-
+.incorrect {
+  color: red !important;
 }
 .correct {
-    color: green !important;
+  color: green !important;
 }

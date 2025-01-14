@@ -31,13 +31,6 @@ body {
   text-align: center;
 }
 .study-page {
-  /* display: flex;
-  position: relative;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; */
   display: flex;
   position: relative;
   flex-direction: column;
@@ -145,13 +138,23 @@ body {
   background-color: #f7a619;
   color: black;
   border-radius: 15px;
+  width: 17vw;
+  height: 7vh;
+  font-family: "avram" !important;
+  border: none;
+  cursor: pointer;
+  margin-inline: -10vw;
+  font-size: 5vmin;
+  /* background-color: #f7a619;
+  color: black;
+  border-radius: 15px;
   width: 20vw;
   height: 7vh;
   font-family: "avram";
   border: none;
   cursor: pointer;
   margin: 4%;
-  font-size: 5vmin;
+  font-size: 5vmin; */
 }
 .move-btns {
   /* display: flex;

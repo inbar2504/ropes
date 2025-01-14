@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { ScratchCard } from "../assets/react-scratchcard";
+import { ScratchCard } from "/assets/react-scratchcard";
 import Swal from "sweetalert2";
 
 function Study(props) {
@@ -581,19 +581,15 @@ function Study(props) {
 
             <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
-            className="img-glisha"
-              // src="/חסר טבעת.JPG"
-              src="src/assets/photos/חסר טבעת.JPG"
+              className="img-glisha"
+              // src="./חסר טבעת.JPG"
+              src="assets/noRing.jpg"
               alt="תמונה של עמדת גלישה"
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
               <ScratchCard finishPercent={100} brushSize={20}>
-                <img
-                  height={150}
-                  width={300}
-                  src="src/assets/photos/טבעת.jpg"
-                />
+                <img height={150} width={300} src="assets/ring.jpg" />
               </ScratchCard>
             </div>
           </div>

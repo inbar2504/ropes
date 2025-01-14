@@ -31,18 +31,23 @@
   height: 45vh;
 }
 .image2 {
-    height: 25vh;
-  }
+  height: 24vh;
+}
 .video-comp {
-    /* width: 50vw; */
-    height: 25vh;
-    margin-top: 2vh;
+  /* width: 50vw; */
+  height: 25vh;
+  margin-top: 10vh;
+}
+.video-comp1 {
+  /* width: 50vw; */
+  height: 25vh;
+  margin-top: 2vh;
 }
 .header-timer {
-    margin-top: -5vh;
-    margin-bottom: 0vh;
+  margin-top: -5vh;
+  margin-bottom: 0vh;
 }
 .header-timer1 {
-    margin-top: 0vh;
-    margin-bottom: 0vh;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
 }

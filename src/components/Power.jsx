@@ -14,7 +14,7 @@ function Power(props) {
   const [showTimer1, setShowTimer1] = useState(false);
   const [showImage2, setShowImage2] = useState(false);
   const num = 0;
-  //   const [showTimer2, setShowTimer2] = useState(false);
+
   const resetAll = (num) => {
     setTimeLeft(3);
     setTimerRunning(false);
@@ -25,14 +25,11 @@ function Power(props) {
     setPageNumber(num);
   };
   const startTimer = () => {
-    console.log("hilo");
     setShowTimer1(true);
-    // setShowTimer1();
     setTimeLeft(3); // אתחול הזמן ל-3 שניות
     setIsTimeUp(false); // אתחול הודעת הזמן נגמר
     setTimerRunning(true); // סימן שהטיימר רץ
   };
-
   useEffect(() => {
     let timer;
     if (timerRunning && timeLeft > 0) {
@@ -74,7 +71,7 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "contents",
+              display: "block",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -108,7 +105,7 @@ function Power(props) {
             style={{
               whiteSpace: "pre-line",
               height: "195px",
-              display: "flex",
+              display: "block",
               textAlign: "center",
               direction: "rtl",
             }}
@@ -150,12 +147,12 @@ function Power(props) {
               //   display: "block",
               textAlign: "center",
               direction: "rtl",
-              display: "contents",
+              display: "flex",
             }}
             sequence={[
               `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי. 
             העומס על החבלים אשר יוצא משני צידי הגלגלת יהיה שווה
-            ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים. .במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
+            ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים. במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
             
             נגדיר את העומס שעל החבל כ-T`,
               100,
@@ -165,12 +162,11 @@ function Power(props) {
             ]}
             cursor={false}
           />
-          <br />
-          <br />
+
           {showImage2 ? (
             <>
               <video
-                src="src/assets/videos/Comp 1-VEED (2).mp4"
+                src="src/assets/video/1.mp4"
                 // width="1440"
                 // height="300"
                 controls
@@ -217,7 +213,7 @@ function Power(props) {
           <TypeAnimation
             style={{
               whiteSpace: "pre-line",
-              height: "195px",
+              //   height: "195px",
               //   display: "block",
               textAlign: "center",
               direction: "rtl",
@@ -228,23 +224,22 @@ function Power(props) {
             חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
             רמז : העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
              התשובה תופיע בעוד 
-            \n`,
+            `,
               100,
-              () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+              () => startTimer(3), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1000}
+            // speed={100}
             cursor={false}
           />
-
           {showTimer1 ? (
             <>
               {isTimeUp ? (
                 <>
-                  <h2 className="header-timer">!הזמן נגמר</h2>
+                  <h2 className="header-timer1">!הזמן נגמר</h2>
                 </>
               ) : (
                 <>
-                  <h2 className="header-timer">{timeLeft}</h2>
+                  <h2 className="header-timer1">{timeLeft}</h2>
                 </>
               )}
             </>
@@ -254,12 +249,12 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/videos/Comp 1-VEED (2).mp4"
+                src="src/assets/video/1.mp4"
                 // width="1440"
                 // height="300"
                 controls
                 autoPlay
-                className="video-comp"
+                className="video-comp1"
               />
               <TypeAnimation
                 style={{
@@ -275,7 +270,7 @@ function Power(props) {
                   רווח כוח- היחס בין הכוח שאני מפעיל לכוח שמרגיש מטען החילוץ `,
                   100,
                 ]}
-                speed={1000}
+                // speed={100}
                 cursor={false}
               />
             </>
@@ -298,12 +293,12 @@ function Power(props) {
         <>
           <h2>קצת על גלגלות</h2>
           <video
-            src="src/assets/videos/Comp 2.mp4"
+            src="src/assets/video/2.mp4"
             // width="1440"
             // height="300"
             controls
             autoPlay
-            className="video-comp"
+            className="video-comp1"
           />
           <TypeAnimation
             style={{
@@ -321,7 +316,7 @@ function Power(props) {
 `,
               100,
             ]}
-            speed={1000}
+            // speed={100}
             cursor={false}
           />
           <div className="move-btns-p">
@@ -342,21 +337,20 @@ function Power(props) {
           <img className="image2" src="src/assets/רווח כוח 3.png" />
           <TypeAnimation
             style={{
-              //   whiteSpace: "pre-line",
+              whiteSpace: "pre-line",
               //   height: "195px",
               display: "flex",
               textAlign: "center",
               direction: "rtl",
             }}
             sequence={[
-              ` ?כמה רווח כוח יש לנו בתמונה
-              \n
+              ` כמה רווח כוח יש לנו בתמונה?
               התשובה  תופיע בעוד
               `,
               100,
               () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1000}
+            // speed={100}
             cursor={false}
           />
 
@@ -378,12 +372,12 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/videos/Comp 3.mp4"
+                src="src/assets/video/Comp 3.mp4"
                 // width="1440"
                 // height="300"
                 controls
                 autoPlay
-                className="video-comp"
+                className="video-comp1"
               />
               <TypeAnimation
                 style={{
@@ -397,7 +391,7 @@ function Power(props) {
                   `במערכת זו לקחנו את מערכת רווח כוח 3 והוספנו 2 גלגלות -גלגלת אחת סטטית וגלגלת אחת דינמית ובסוף יצא רווח כוח 5`,
                   100,
                 ]}
-                speed={1000}
+                // speed={100}
                 cursor={false}
               />
             </>
@@ -430,14 +424,18 @@ function Power(props) {
               direction: "rtl",
             }}
             sequence={[
-              `בנינו מערכת רווח כוח 3 איך אוכל להכפיל את הכוח?
-              \n
+              `בנינו מערכת רווח כוח 3-חשבו כיצד נוכל להכפיל את הכוח
               התשובה  תופיע בעוד
               `,
               100,
-              () => startTimer(), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+              () => {
+                if (isTyping) {
+                  startTimer(6); // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+                }
+              },
+              // startTimer(6), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
             ]}
-            speed={1000}
+            // speed={100}
             cursor={false}
           />
 
@@ -459,12 +457,12 @@ function Power(props) {
           {timeLeft === 0 ? (
             <>
               <video
-                src="src/assets/videos/Comp 4.mp4"
+                src="src/assets/video/4.mp4"
                 // width="1440"
                 // height="300"
                 controls
                 autoPlay
-                className="video-comp"
+                className="video-comp1"
               />
               <TypeAnimation
                 style={{
@@ -478,7 +476,7 @@ function Power(props) {
                   `על חבל המשיכה בניתי מערכת רווח כוח 3 נוספת ובכך הכפלתי את הכוח מרווח כוח 3 לרווח כוח 9 (3 בריבוע)`,
                   100,
                 ]}
-                speed={1000}
+                // speed={100}
                 cursor={false}
               />
             </>
@@ -500,22 +498,65 @@ function Power(props) {
       )}
       {pageNumber === 7 ? (
         <>
+          <h2>חידה</h2>
+          <img className="image2" src="src/assets/רווח כוח 3.png" />
+          <TypeAnimation
+            style={{
+              whiteSpace: "pre-line",
+              height: "195px",
+              display: "contents",
+              textAlign: "center",
+              direction: "rtl",
+            }}
+            sequence={[
+              `יש לנו מערכת רווח כוח 3 ואנחנו צריכים להיפטר מגלגלת אחת(לשים במקומה טבעת), מאיזה גלגלת תבחר להיפטר?
+              \n
+              רמז: כאשר נוריד גלגלת אחת ונישאר רק עם טבעת באופן אוטומטי החיכוך יגדל, איפה היינו מעדיפים מחיכוך גדול יותר?באיזו נקודה?איפה החיכוך ישפיע פחות?
+\n
+              התשובה  תופיע בעוד
+              `,
+              100,
+              () => startTimer(7), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
+            ]}
+            // speed={100}
+            cursor={false}
+          />
+
+          {showTimer1 ? (
+            <div>
+              {isTimeUp ? (
+                <>
+                  <h2 className="header-timer1">!הזמן נגמר</h2>
+                </>
+              ) : (
+                <>
+                  <h2 className="header-timer1">{timeLeft}</h2>
+                </>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
+          {timeLeft === 0 ? (
+            <>
+              <TypeAnimation
+                style={{
+                  //   whiteSpace: "pre-line",
+                  //   height: "195px",
+                  display: "contents",
+                  textAlign: "center",
+                  direction: "rtl",
+                }}
+                sequence={[`נוריד את הגלגלת שקרובה לסדרן`, 100]}
+                // speed={100}
+                // cursor={false}
+              />
+            </>
+          ) : (
+            <></>
+          )}
           <div className="move-btns-p">
-            <button className="last-btn" onClick={() => setPageNumber(6)}>
-              הקודם
-            </button>
-            <button className="next-btn" onClick={() => setPageNumber(8)}>
-              הבא
-            </button>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
-      {pageNumber === 8 ? (
-        <>
-          <div className="move-btns-p">
-            <button className="last-btn" onClick={() => setPageNumber(7)}>
+            <button className="last-btn" onClick={() => resetAll(6)}>
               הקודם
             </button>
             <button className="next-btn" onClick={() => setFinish3("true")}>

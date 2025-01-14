@@ -581,8 +581,9 @@ function Study(props) {
 
             <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
-              src="/חסר טבעת.jpg"
-              // src="src/assets/photos/חסר טבעת.JPG"
+            className="img-glisha"
+              // src="/חסר טבעת.JPG"
+              src="src/assets/photos/חסר טבעת.JPG"
               alt="תמונה של עמדת גלישה"
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>

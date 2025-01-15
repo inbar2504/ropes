@@ -21,7 +21,7 @@ function App() {
             <div className='btn-start-place'>
             <button className='btn-start' onClick={() => setShow("test")}>בא לי להיבחן</button>
             <button className='btn-start' onClick={() => setShow("study")}>יאללה, ללמוד</button>
-            <button className='btn-start' onClick={() => setShow("power")}>פיסיקה בקטנה</button>
+            <button className='btn-start' onClick={() => setShow("power")}>רווח כוח</button>
           </div>
           </div>
          

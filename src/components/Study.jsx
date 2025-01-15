@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-// import { ScratchCard } from "/assets/react-scratchcard";
+import { ScratchCard } from "/assets/react-scratchcard";
 import Swal from "sweetalert2";
-import { ScratchCard } from "next-scratchcard";
+// import { ScratchCard } from "next-scratchcard";
 
 function Study(props) {
   const [pageNum, setPageNum] = useState(0);
@@ -128,7 +128,7 @@ function Study(props) {
             <h1>חבלים 3</h1>
 
             <h2>"מעבר מהורדה להרמה עם מאסטרו"</h2>
-            <h3>דפדפו כדי לראות את סדר הפעולות</h3>
+            <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
                 type: "fraction",
@@ -201,7 +201,7 @@ function Study(props) {
             <h1>חבלים 3</h1>
 
             <h2>"מעבר קשר בהרמה - מכונת הרמה"</h2>
-            <h3>דפדפו כדי לראות את סדר הפעולות</h3>
+            <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
                 type: "fraction",
@@ -278,7 +278,7 @@ function Study(props) {
             <h1>חבלים 3</h1>
 
             <h2>"מעבר קשר בהרמה - רווח כוח"</h2>
-            <h3>דפדפו כדי לראות את סדר הפעולות</h3>
+            <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
                 type: "fraction",
@@ -367,7 +367,7 @@ function Study(props) {
             <h1>חבלים 3</h1>
 
             <h2>"גולש אחרון"</h2>
-            <h3>דפדפו כדי לראות את סדר הפעולות</h3>
+            <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
                 type: "fraction",

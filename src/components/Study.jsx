@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { ScratchCard } from "/assets/react-scratchcard";
+import { ScratchCard } from "/react-scratchcard";
 import Swal from "sweetalert2";
 // import { ScratchCard } from "next-scratchcard";
 

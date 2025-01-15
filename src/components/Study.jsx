@@ -58,12 +58,12 @@ function Study(props) {
             <h1>חבלים 3</h1>
 
             <h2>"מעבר מהורדה להרמה עם אקטסייף"</h2>
-            <h3>דפדפו כדי לראות את סדר הפעולות</h3>
+            <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
                 type: "fraction",
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -110,11 +110,11 @@ function Study(props) {
             </Swiper>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => props.setShow("start")}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(1)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => props.setShow("start")}>
+              הקודם
             </button>
           </div>
         </>
@@ -132,7 +132,7 @@ function Study(props) {
               pagination={{
                 type: "fraction",
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -183,11 +183,11 @@ function Study(props) {
             </Swiper>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(0)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(2)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(0)}>
+              הקודם
             </button>
           </div>
         </>
@@ -205,7 +205,7 @@ function Study(props) {
               pagination={{
                 type: "fraction",
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -260,11 +260,11 @@ function Study(props) {
             </Swiper>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(1)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(3)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(1)}>
+              הקודם
             </button>
           </div>
         </>
@@ -282,7 +282,7 @@ function Study(props) {
               pagination={{
                 type: "fraction",
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -349,11 +349,11 @@ function Study(props) {
             </Swiper>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(2)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(4)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(2)}>
+              הקודם
             </button>
           </div>
         </>
@@ -371,7 +371,7 @@ function Study(props) {
               pagination={{
                 type: "fraction",
               }}
-              navigation={true}
+              // navigation={true}
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
@@ -563,11 +563,11 @@ function Study(props) {
             </Swiper>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(3)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(5)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(3)}>
+              הקודם
             </button>
           </div>
         </>
@@ -593,11 +593,11 @@ function Study(props) {
             </div>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(4)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(6)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(4)}>
+              הקודם
             </button>
           </div>
         </>
@@ -623,11 +623,11 @@ function Study(props) {
             </div>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(5)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(7)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(5)}>
+              הקודם
             </button>
           </div>
         </>
@@ -640,7 +640,7 @@ function Study(props) {
             <h1>חבלים 3</h1>
             <div>
               <h2>
-                איך יודעים איפה שקול הוקטורים בחצובה(כיוון הכוח של העומס שמופעל
+                איך יודעים איפה שקול הוקטורים בחצובה (כיוון הכוח של העומס שמופעל
                 על החצובה)
               </h2>
               <button
@@ -692,11 +692,11 @@ function Study(props) {
           </div>
 
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(6)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setPageNum(8)}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(6)}>
+              הקודם
             </button>
           </div>
         </>
@@ -744,11 +744,11 @@ function Study(props) {
             </div>
           </div>
           <div className="move-btns">
-            <button className="last-btn" onClick={() => setPageNum(7)}>
-              הקודם
-            </button>
             <button className="next-btn" onClick={() => setFinish1("true")}>
               הבא
+            </button>
+            <button className="last-btn" onClick={() => setPageNum(7)}>
+              הקודם
             </button>
           </div>
         </>

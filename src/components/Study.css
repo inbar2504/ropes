@@ -119,7 +119,7 @@ body {
 }
 .text {
   position: relative;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60vw;
@@ -135,6 +135,7 @@ body {
 }
 .next-btn,
 .last-btn {
+  display: flow;
   background-color: #f7a619;
   color: black;
   border-radius: 15px;
@@ -206,4 +207,8 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+.seder {
+  letter-spacing: 2px;
+  margin-top: -1vh;
 }

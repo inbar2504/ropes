@@ -1,12 +1,12 @@
 .answers {
   font-family: "avram" !important;
 
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: baseline;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .css-rizt0-MuiTypography-root {
@@ -35,6 +35,7 @@
 .center-header {
   text-align: center;
   font-family: "avram" !important;
+  font-size: 5vmin;
 }
 #end-btn2 {
   font-family: "avram" !important;

@@ -1,5 +1,12 @@
 .answers {
   font-family: "avram" !important;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .css-rizt0-MuiTypography-root {

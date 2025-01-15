@@ -145,7 +145,8 @@ body {
   cursor: pointer;
   margin-inline: -9vw;
   font-size: 5vmin;
-  text-align: center;
+  /* text-align: centder; */
+  text-align: -webkit-center;
   /* background-color: #f7a619;
   color: black;
   border-radius: 15px;

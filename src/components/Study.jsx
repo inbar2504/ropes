@@ -593,7 +593,7 @@ function Study(props) {
                   height={150}
                   width={300}
                   src="assets/ring.jpg"
-                  loading="lazy"
+                  loading="eager"
                 />
               </ScratchCard>
 
@@ -632,7 +632,7 @@ function Study(props) {
                   height={150}
                   width={300}
                   src="assets/sadran.jpg"
-                  loading="lazy"
+                  loading="eager"
                 />
               </ScratchCard>
               {/* <ScratchCard finishPercent={100} brushSize={20}>

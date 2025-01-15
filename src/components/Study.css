@@ -124,6 +124,16 @@ body {
   transform: translate(-50%, -50%);
   width: 60vw;
   font-size: 5vmin;
+  color: #073c4b;
+}
+.head {
+  color: #af5952;
+}
+.head1 {
+  color: #6f4245;
+}
+.spacing {
+  letter-spacing: 1px;
 }
 .text-small {
   position: relative;
@@ -132,6 +142,7 @@ body {
   transform: translate(-50%, -50%);
   width: 60vw;
   font-size: 4vmin;
+  color: #073c4b;
 }
 .next-btn,
 .last-btn {

@@ -56,9 +56,9 @@ function Study(props) {
       {pageNum === 0 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>"מעבר מהורדה להרמה עם אקטסייף"</h2>
+            <h2 className="head1">"מעבר מהורדה להרמה עם אקטסייף"</h2>
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
@@ -125,9 +125,9 @@ function Study(props) {
       {pageNum === 1 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>"מעבר מהורדה להרמה עם מאסטרו"</h2>
+            <h2 className="head1">"מעבר מהורדה להרמה עם מאסטרו"</h2>
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
@@ -198,9 +198,9 @@ function Study(props) {
       {pageNum === 2 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>"מעבר קשר בהרמה - מכונת הרמה"</h2>
+            <h2 className="head1">"מעבר קשר בהרמה - מכונת הרמה"</h2>
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
@@ -275,9 +275,9 @@ function Study(props) {
       {pageNum === 3 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>"מעבר קשר בהרמה - רווח כוח"</h2>
+            <h2 className="head1">"מעבר קשר בהרמה - רווח כוח"</h2>
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
@@ -364,9 +364,9 @@ function Study(props) {
       {pageNum === 4 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>"גולש אחרון"</h2>
+            <h2 className="head1">"גולש אחרון"</h2>
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
@@ -578,16 +578,16 @@ function Study(props) {
       {pageNum === 5 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
+            <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
               src="assets/noRing.jpg"
               alt="תמונה של עמדת גלישה"
               loading="eager"
             />
-            <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
+            <h3 className="spacing">יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
               <ScratchCard finishPercent={100} brushSize={20}>
                 <img
@@ -618,16 +618,16 @@ function Study(props) {
       {pageNum === 6 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
 
-            <h2>מצא את הפריט החסר מעמדת הגלישה</h2>
+            <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
               src="assets/sadran1.jpg"
               alt="תמונה של עמדת גלישה"
               loading="eager"
             />
-            <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
+            <h3 className="spacing">יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
               <ScratchCard finishPercent={100} brushSize={20}>
                 <img
@@ -657,9 +657,9 @@ function Study(props) {
       {pageNum === 7 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
             <div>
-              <h2>
+              <h2 className="head1">
                 איך יודעים איפה שקול הוקטורים בחצובה (כיוון הכוח של העומס שמופעל
                 על החצובה)
               </h2>
@@ -726,9 +726,9 @@ function Study(props) {
       {pageNum === 8 ? (
         <>
           <div className="study-page">
-            <h1>חבלים 3</h1>
+            <h1 className="head">חבלים 3</h1>
             <div>
-              <h2>איפה שקול הווקטורים בחצובה אמור להיות</h2>
+              <h2 className="head1">איפה שקול הווקטורים בחצובה אמור להיות</h2>
               <button
                 className="question-btn"
                 id="btn01"

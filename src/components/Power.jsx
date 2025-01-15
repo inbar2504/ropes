@@ -112,28 +112,11 @@ function Power(props) {
             <TypingAnimation
               durationInSeconds={10}
               text={`
-                         עקרון רווח הכוח מתאר את היכולת להגדיל את הכוח או האנרגיה במערכת בצורה יעילה, באמצעות שיפור ביצועים או אופטימיזציה של תהליכים טכנולוגיים או פיזיקליים\n 
+                         עקרון רווח הכוח מתאר את היכולת להגדיל את הכוח או האנרגיה במערכת בצורה יעילה,\n 
                  יאללה לחצו על כפתור "הבא" על מנת להתחיל את החלק המעניין יותר
                          `}
             />
-            {/* <TypeAnimation
-            style={{
-              whiteSpace: "pre-line",
-              height: "195px",
-              display: "block",
-              textAlign: "center",
-              direction: "rtl",
-            }}
-            sequence={[
-              `
-                      עקרון רווח הכוח מתאר את היכולת להגדיל את הכוח או האנרגיה במערכת בצורה יעילה, באמצעות שיפור ביצועים או אופטימיזציה של תהליכים טכנולוגיים או פיזיקליים\n 
-              יאללה לחצו על כפתור "הבא" על מנת להתחיל את החלק המעניין יותר
-                      `,
-              1000,
-            ]}
-            // speed={50}
-            // repeat={0}
-          /> */}
+
             <div className="move-btns-p">
               <button className="next-btn" onClick={() => resetAll(1)}>
                 הבא
@@ -158,24 +141,7 @@ function Power(props) {
               durationInSeconds={10}
               text={`כאשר אנו מנסים להרים מטען כבד אותו לא ניתן להרים באמצעות כוח ידיים, נבנה מערכת גלגלות באמצעותה נוכל להכפיל את הכוח שאנו מפעילים ונהפוך את תהליך ההרמה לקל יותר.`}
             />
-            {/* <TypeAnimation
-            style={{
-              whiteSpace: "pre-line",
-              height: "195px",
-              display: "block",
-              textAlign: "center",
-              direction: "rtl",
-              width: "60vw",
-              marginBottom: "2vh",
-            }}
-            sequence={[
-              "כאשר אנו מנסים להרים מטען כבד אותו לא ניתן להרים באמצעות כוח ידיים, נבנה מערכת גלגלות באמצעותה נוכל להכפיל את הכוח שאנו מפעילים ונהפוך את תהליך ההרמה לקל יותר.",
-              1000, // הפסקה של שנייה
-              () => {
-                setShowImage1(true);
-              },
-            ]}
-          /> */}
+
             {showImage1 ? (
               <>
                 <img className="image1" src="assets/one.png" />
@@ -205,35 +171,35 @@ function Power(props) {
             <TypeAnimation
               style={{
                 whiteSpace: "pre-line",
-                height: "195px",
+                // height: "195px",
                 //   display: "block",
                 textAlign: "center",
                 direction: "rtl",
                 display: "flex",
               }}
               sequence={[
-                `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי. 
-            העומס על החבלים אשר יוצא משני צידי הגלגלת יהיה שווה
-            ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים. במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
-            נגדיר את העומס שעל החבל כ-T`,
+                `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי.
+נגדיר את העומס שעל החבל כ-T
+            `,
                 100,
                 () => {
                   setShowImage2(true);
                 },
               ]}
-              cursor={false}
+              // cursor={false}
             />
 
             {showImage2 ? (
               <>
-                <video
+                <img className="image3" src="assets/twoH.png" />
+                {/* <video
                   src="assets/video/01.mp4"
                   // width="1440"
                   // height="300"
                   controls
                   autoPlay
                   className="video-comp"
-                />
+                /> */}
 
                 <TypeAnimation
                   style={{
@@ -246,10 +212,11 @@ function Power(props) {
                     width: "70vw",
                   }}
                   sequence={[
-                    "בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) ",
+                    ` העומס על החבל אשר יוצא משני צידי הגלגלת יהיה שווה
+                      ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים`,
                     100,
                   ]}
-                  cursor={false}
+                  // cursor={false}
                 />
               </>
             ) : (
@@ -269,16 +236,56 @@ function Power(props) {
       ) : (
         <></>
       )}
-      {pageNumber === 3 ? (
+      {/* בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) ,במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת */}
+      {pageNumber === 3 && (
+        <>
+          <div className="power">
+            <h2 className="blackHeader">?איך עובדת גלגלת</h2>
+            <video
+              src="assets/video/01.mp4"
+              // width="1440"
+              // height="300"
+              controls
+              autoPlay
+              className="video-comp"
+            />
+            <TypeAnimation
+              style={{
+                whiteSpace: "pre-line",
+                // height: "195px",
+                textAlign: "center",
+                direction: "rtl",
+                display: "block",
+              }}
+              sequence={[
+                `
+                במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
+                בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) 
+                `,100,
+              ]}
+            />
+
+            <div className="move-btns-p">
+              <button className="next-btn" onClick={() => resetAll(4)}>
+                הבא
+              </button>
+              <button className="last-btn" onClick={() => resetAll(2)}>
+                הקודם
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+      {pageNumber === 4 ? (
         <>
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
-
+            <img className="image3" src="assets/revah2.png" />
             <TypingAnimation
               durationInSeconds={10}
-              text={`התבקשת להרים אדם השוקל T. 
+              text={`התבקשת להרים משוקלת השוקלת T. 
               חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
-              רמז: העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
+              רמז: העומס על הגלגלת התחתונה שווה לעומס שמפעיל הבן אדם
               .
                התשובה תופיע בעוד 
               `}
@@ -330,10 +337,10 @@ function Power(props) {
               <></>
             )}
             <div className="move-btns-p">
-              <button className="next-btn" onClick={() => resetAll(4)}>
+              <button className="next-btn" onClick={() => resetAll(5)}>
                 הבא
               </button>
-              <button className="last-btn" onClick={() => resetAll(2)}>
+              <button className="last-btn" onClick={() => resetAll(3)}>
                 הקודם
               </button>
             </div>
@@ -342,10 +349,10 @@ function Power(props) {
       ) : (
         <></>
       )}
-      {pageNumber === 4 ? (
+      {pageNumber === 5 ? (
         <>
           <div className="power">
-            <h2 className="blackHeader">קצת על גלגלות</h2>
+            <h2 className="blackHeader">הדגמה-רווח כוח 3</h2>
             <video
               src="assets/video/02.mp4"
               // width="1440"
@@ -373,11 +380,12 @@ function Power(props) {
               // speed={100}
               cursor={false}
             />
+
             <div className="move-btns-p">
-              <button className="next-btn" onClick={() => resetAll(5)}>
+              <button className="next-btn" onClick={() => resetAll(6)}>
                 הבא
               </button>
-              <button className="last-btn" onClick={() => resetAll(3)}>
+              <button className="last-btn" onClick={() => resetAll(4)}>
                 הקודם
               </button>
             </div>
@@ -386,11 +394,11 @@ function Power(props) {
       ) : (
         <></>
       )}
-      {pageNumber === 5 ? (
+      {pageNumber === 6 ? (
         <>
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
-            <img className="image2" src="assets/revah3.png" />
+            <img className="image2" src="assets/revah1.png" />
             <TypingAnimation
               durationInSeconds={6}
               text={` כמה רווח כוח יש לנו בתמונה?
@@ -444,10 +452,10 @@ function Power(props) {
             )}
 
             <div className="move-btns-p">
-              <button className="next-btn" onClick={() => resetAll(6)}>
+              <button className="next-btn" onClick={() => resetAll(7)}>
                 הבא
               </button>
-              <button className="last-btn" onClick={() => resetAll(4)}>
+              <button className="last-btn" onClick={() => resetAll(5)}>
                 הקודם
               </button>
             </div>
@@ -456,11 +464,11 @@ function Power(props) {
       ) : (
         <></>
       )}
-      {pageNumber === 6 ? (
+      {pageNumber === 7 ? (
         <>
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
-            <img className="image2" src="assets/revah3.png" />
+            <img className="image2" src="assets/revah1.png" />
             <TypingAnimation
               durationInSeconds={10}
               text={`בנינו מערכת רווח כוח 3-חשבו כיצד נוכל להכפיל את הכוח
@@ -486,7 +494,7 @@ function Power(props) {
             {timeLeft === 0 ? (
               <>
                 <video
-                  src="assets/video/04.mp4"
+                  src="assets/video/09.mp4"
                   // width="1440"
                   // height="300"
                   controls
@@ -514,10 +522,10 @@ function Power(props) {
             )}
 
             <div className="move-btns-p">
-              <button className="next-btn" onClick={() => resetAll(7)}>
+              <button className="next-btn" onClick={() => resetAll(8)}>
                 הבא
               </button>
-              <button className="last-btn" onClick={() => resetAll(5)}>
+              <button className="last-btn" onClick={() => resetAll(6)}>
                 הקודם
               </button>
             </div>
@@ -526,11 +534,12 @@ function Power(props) {
       ) : (
         <></>
       )}
-      {pageNumber === 7 ? (
+
+      {pageNumber === 8 ? (
         <>
           <div className="power">
             <h2 className="blueHeader">חידה</h2>
-            <img className="image2" src="assets/revah3.png" />
+            <img className="image2" src="assets/revah1.png" />
             <TypingAnimation
               durationInSeconds={24}
               text={`יש לנו מערכת רווח כוח 3 ואנחנו צריכים להיפטר מגלגלת אחת (לשים במקומה טבעת), מאיזה גלגלת תבחר להיפטר?
@@ -540,27 +549,6 @@ function Power(props) {
               התשובה  תופיע בעוד
               `}
             />
-            {/* <TypeAnimation
-            style={{
-              whiteSpace: "pre-line",
-              height: "195px",
-              display: "contents",
-              textAlign: "center",
-              direction: "rtl",
-            }}
-            sequence={[
-              `יש לנו מערכת רווח כוח 3 ואנחנו צריכים להיפטר מגלגלת אחת(לשים במקומה טבעת), מאיזה גלגלת תבחר להיפטר?
-              \n
-              רמז: כאשר נוריד גלגלת אחת ונישאר רק עם טבעת באופן אוטומטי החיכוך יגדל, איפה היינו מעדיפים מחיכוך גדול יותר?באיזו נקודה?איפה החיכוך ישפיע פחות?
-\n
-              התשובה  תופיע בעוד
-              `,
-              100,
-              () => startTimer(7), // הפונקציה startTimer תופעל אחרי שהאנימציה מסתיימת
-            ]}
-            // speed={100}
-            cursor={false}
-          /> */}
 
             {showTimer1 ? (
               <div>
@@ -599,7 +587,7 @@ function Power(props) {
               <button className="next-btn" onClick={() => setFinish3("true")}>
                 הבא
               </button>
-              <button className="last-btn" onClick={() => resetAll(6)}>
+              <button className="last-btn" onClick={() => resetAll(7)}>
                 הקודם
               </button>
             </div>
@@ -613,4 +601,3 @@ function Power(props) {
 }
 
 export default Power;
-

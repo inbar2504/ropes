@@ -389,7 +389,7 @@ function Study(props) {
                   <b>שלב 2</b>
                   <br />
                   <br></br>
-                  שלח את הכווח הראשוני (לוחם אחד או שניים) לתחתית המצוק עם הציוד
+                  שלח את הכוח הראשוני (לוחם אחד או שניים) לתחתית המצוק עם הציוד
                   הרלוונטי
                 </div>
               </SwiperSlide>
@@ -585,6 +585,7 @@ function Study(props) {
               className="img-glisha"
               src="assets/noRing.jpg"
               alt="תמונה של עמדת גלישה"
+              loading="eager"
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
@@ -624,6 +625,7 @@ function Study(props) {
               className="img-glisha"
               src="assets/sadran1.jpg"
               alt="תמונה של עמדת גלישה"
+              loading="eager"
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">

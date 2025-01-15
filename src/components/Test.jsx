@@ -121,7 +121,7 @@ function Test() {
       ],
     },
     {
-      questionText: "למה יש בחצובה גלגלת בגובה ביצים",
+      questionText: "למה יש בחצובה גלגלת בגובה מותן",
       answerOptions: [
         {
           answerText: "א. שבעת העלייה יהיה יותר קל לשחרר את המחלץ מהמערכת",
@@ -184,10 +184,10 @@ function Test() {
     } else {
       newItem = "incorrect";
     }
-    
+
     // הוספת הערך למערך לאחר החלטת התשובה
-    setItem(prevItem => [...prevItem, newItem]);
-  
+    setItem((prevItem) => [...prevItem, newItem]);
+
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
@@ -206,7 +206,6 @@ function Test() {
       {showScore ? (
         <div className="score-section">
           <Answers brand={score} que={item} />
-          
         </div>
       ) : (
         <>

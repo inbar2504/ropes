@@ -14,7 +14,7 @@ function App() {
         <>
         <div className='start-page'>
             <h1>חבלים</h1>
-            <h2>&#8252;חייל יקר
+            <h2 className="txt">!חייל יקר
               <br />
               הלומדה הבאה עוסקת בחבלים 3
             </h2>

@@ -45,11 +45,13 @@ body {
   top: -25%;
   margin: 10%;
 }
-
+.txt {
+  width: 50vw;
+}
 .btn-start-place {
   display: flex;
   color: black;
-  width: 80vw;
+  width: 90vw;
   position: absolute;
   top: 90vh;
   flex-direction: row;

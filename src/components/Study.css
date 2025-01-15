@@ -145,6 +145,7 @@ body {
   cursor: pointer;
   margin-inline: -10vw;
   font-size: 5vmin;
+  text-align: center;
   /* background-color: #f7a619;
   color: black;
   border-radius: 15px;
@@ -200,7 +201,7 @@ body {
 }
 .answer-result {
   font-size: 5vmin;
-  width: 90vw;
+  width: 65vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);

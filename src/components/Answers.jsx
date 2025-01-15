@@ -86,10 +86,12 @@ function Answers(props) {
           expanded={expanded === "panel1"}
           onChange={handleChange("panel1")}
         >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" className={props.que[1]}>
-            <Typography component="span" >
-              מה ההפסד בהגדלת רווח הכוח?
-            </Typography>
+          <AccordionSummary
+            aria-controls="panel1d-content"
+            id="panel1d-header"
+            className={props.que[1]}
+          >
+            <Typography component="span">מה ההפסד בהגדלת רווח הכוח?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
@@ -108,7 +110,11 @@ function Answers(props) {
           expanded={expanded === "panel2"}
           onChange={handleChange("panel2")}
         >
-          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" className={props.que[2]}>
+          <AccordionSummary
+            aria-controls="panel2d-content"
+            id="panel2d-header"
+            className={props.que[2]}
+          >
             <Typography component="span">
               האם העומס של המערכת שונה בהרמה ושילוח (הנח שמשקל המחלצים זהה)?
             </Typography>
@@ -126,7 +132,11 @@ function Answers(props) {
           expanded={expanded === "panel3"}
           onChange={handleChange("panel3")}
         >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" className={props.que[3]}>
+          <AccordionSummary
+            aria-controls="panel3d-content"
+            id="panel3d-header"
+            className={props.que[3]}
+          >
             <Typography component="span">למה נועד הסופג אנרגיה?</Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -142,7 +152,11 @@ function Answers(props) {
           expanded={expanded === "panel4"}
           onChange={handleChange("panel4")}
         >
-          <AccordionSummary aria-controls="panel4d-content" id="panel4d-header" className={props.que[4]}>
+          <AccordionSummary
+            aria-controls="panel4d-content"
+            id="panel4d-header"
+            className={props.que[4]}
+          >
             <Typography component="span">
               מה עושים כאשר מכונת ההרמה לא פועלת חשמלית בתחילת ההרמה?
             </Typography>
@@ -160,7 +174,11 @@ function Answers(props) {
           expanded={expanded === "panel5"}
           onChange={handleChange("panel5")}
         >
-          <AccordionSummary aria-controls="panel5d-content" id="panel5d-header" className={props.que[5]}>
+          <AccordionSummary
+            aria-controls="panel5d-content"
+            id="panel5d-header"
+            className={props.que[5]}
+          >
             <Typography component="span">
               מה עושים כאשר מכונת ההרמה עובדת אבל לא מצליחה להרים את המחלץ
               והפצוע?
@@ -180,9 +198,13 @@ function Answers(props) {
           expanded={expanded === "panel6"}
           onChange={handleChange("panel6")}
         >
-          <AccordionSummary aria-controls="panel6d-content" id="panel6d-header" className={props.que[6]}>
+          <AccordionSummary
+            aria-controls="panel6d-content"
+            id="panel6d-header"
+            className={props.que[6]}
+          >
             <Typography component="span">
-              למה יש בחצובה גלגלת בגובה ביצים?
+              למה יש בחצובה גלגלת בגובה מותן?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
@@ -198,7 +220,11 @@ function Answers(props) {
           expanded={expanded === "panel7"}
           onChange={handleChange("panel7")}
         >
-          <AccordionSummary aria-controls="panel7d-content" id="panel7d-header" className={props.que[7]}>
+          <AccordionSummary
+            aria-controls="panel7d-content"
+            id="panel7d-header"
+            className={props.que[7]}
+          >
             <Typography component="span">
               לאיזה גלגלת נחבר את מכונת ההרמה אקטסייף?
             </Typography>

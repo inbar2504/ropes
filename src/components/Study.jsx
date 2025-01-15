@@ -588,7 +588,7 @@ function Study(props) {
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
-              <ScratchCard1 finishPercent={30} brushSize={20}>
+              <ScratchCard1>
                 <img height={150} width={300} src="assets/ring.jpg" />
               </ScratchCard1>
               {/* <ScratchCard finishPercent={100} brushSize={20}>

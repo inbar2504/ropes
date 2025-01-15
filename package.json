@@ -18,6 +18,7 @@
     "@mui/icons-material": "^6.3.1",
     "@mui/material": "^6.3.1",
     "@mui/styled-engine-sc": "^6.3.1",
+    "next-scratchcard": "^0.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-simple-typewriter": "^5.0.1",

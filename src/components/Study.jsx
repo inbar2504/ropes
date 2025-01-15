@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { ScratchCard } from "/assets/react-scratchcard";
+// import { ScratchCard } from "/assets/react-scratchcard";
 import Swal from "sweetalert2";
-import { ScratchCard1 } from "next-scratchcard";
+import { ScratchCard } from "next-scratchcard";
 
 function Study(props) {
   const [pageNum, setPageNum] = useState(0);
@@ -588,9 +588,10 @@ function Study(props) {
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
-              <ScratchCard1>
+              <ScratchCard finishPercent={30} brushSize={20}>
                 <img height={150} width={300} src="assets/ring.jpg" />
-              </ScratchCard1>
+              </ScratchCard>
+
               {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/ring.jpg" />
               </ScratchCard> */}
@@ -621,9 +622,12 @@ function Study(props) {
             />
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
-              <ScratchCard finishPercent={100} brushSize={20}>
+              <ScratchCard finishPercent={30} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />
               </ScratchCard>
+              {/* <ScratchCard finishPercent={100} brushSize={20}>
+                <img height={150} width={300} src="assets/sadran.jpg" />
+              </ScratchCard> */}
             </div>
           </div>
           <div className="move-btns">

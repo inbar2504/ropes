@@ -186,10 +186,10 @@ function Answers(props) {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              התשובה הנכונה הינה ד':
+              התשובה הנכונה הינה ג':
               <br />
-              ד. מנסים לעזור למכונה על ידי משיכת חבל על מנת להתגבר על החיכוך
-              הדינמי
+              ג. מנסים לעזור למכונה על ידי משיכת חבל על מנת להתגבר על החיכוך
+              הסטטי
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -204,7 +204,7 @@ function Answers(props) {
             className={props.que[6]}
           >
             <Typography component="span">
-              למה יש בחצובה גלגלת בגובה מותן?
+              למה יש בחצובה גלגלת בגובה ביצים?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>

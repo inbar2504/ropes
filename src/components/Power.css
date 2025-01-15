@@ -6,6 +6,7 @@ body {
   /* display: flex; */
   font-family: "avram";
   overflow: hidden;
+  color: rgb(127, 127, 127);
   /* flex-direction: column; */
   /* align-items: center; */
   /* justify-content: space-between;  */
@@ -39,7 +40,7 @@ body {
   font-family: "avram";
   flex-direction: column;
   font-size: 5vmin;
-  width: 68vw;
+  width: 67vw;
   text-align: center;
   flex-wrap: nowrap;
   align-content: center;
@@ -67,13 +68,19 @@ body {
 .image1 {
   height: 45vh;
 }
+.blueHeader {
+  color: #083b4c;
+}
+.blackHeader {
+  color: #000000;
+}
 .image2 {
   height: 24vh;
 }
 .video-comp {
   /* width: 50vw; */
   height: 25vh;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 .video-comp1 {
   /* width: 50vw; */

@@ -153,7 +153,7 @@ function Power(props) {
       {pageNumber === 1 ? (
         <>
           <div className="power">
-            <h2>למה אנחנו בכלל נוגעים ברווח כוח</h2>
+            <h2 className="blackHeader">למה אנחנו בכלל נוגעים ברווח כוח</h2>
             <TypingAnimation
               durationInSeconds={10}
               text={`כאשר אנו מנסים להרים מטען כבד אותו לא ניתן להרים באמצעות כוח ידיים, נבנה מערכת גלגלות באמצעותה נוכל להכפיל את הכוח שאנו מפעילים ונהפוך את תהליך ההרמה לקל יותר.`}
@@ -201,7 +201,7 @@ function Power(props) {
       {pageNumber === 2 ? (
         <>
           <div className="power">
-            <h2>?איך עובדת גלגלת</h2>
+            <h2 className="blackHeader">?איך עובדת גלגלת</h2>
             <TypeAnimation
               style={{
                 whiteSpace: "pre-line",
@@ -215,7 +215,6 @@ function Power(props) {
                 `מטרתה של גלגלת היא לשנות את הכיוון של החבל בחיכוך מינימלי. 
             העומס על החבלים אשר יוצא משני צידי הגלגלת יהיה שווה
             ולכן העומס שיהיה על הגלגלת תמיד יהיה סכום העומסים. במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
-            
             נגדיר את העומס שעל החבל כ-T`,
                 100,
                 () => {
@@ -233,7 +232,7 @@ function Power(props) {
                   // height="300"
                   controls
                   autoPlay
-                  className="video-comp1"
+                  className="video-comp"
                 />
 
                 <TypeAnimation
@@ -244,6 +243,7 @@ function Power(props) {
                     textAlign: "center",
                     direction: "rtl",
                     display: "contents",
+                    width: "70vw",
                   }}
                   sequence={[
                     "בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) ",
@@ -272,13 +272,14 @@ function Power(props) {
       {pageNumber === 3 ? (
         <>
           <div className="power">
-            <h2>בואו נתרגל קצת</h2>
+            <h2 className="blueHeader">בואו נתרגל קצת</h2>
 
             <TypingAnimation
               durationInSeconds={10}
-              text={`התבקשתי להרים אדם השוקל T. 
+              text={`התבקשת להרים אדם השוקל T. 
               חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
-              רמז : העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
+              רמז: העומס על הגלגלת שווה לעומס שמפעיל הבן אדם
+              .
                התשובה תופיע בעוד 
               `}
             />
@@ -344,7 +345,7 @@ function Power(props) {
       {pageNumber === 4 ? (
         <>
           <div className="power">
-            <h2>קצת על גלגלות</h2>
+            <h2 className="blackHeader">קצת על גלגלות</h2>
             <video
               src="assets/video/02.mp4"
               // width="1440"
@@ -388,7 +389,7 @@ function Power(props) {
       {pageNumber === 5 ? (
         <>
           <div className="power">
-            <h2>בואו נתרגל קצת</h2>
+            <h2 className="blueHeader">בואו נתרגל קצת</h2>
             <img className="image2" src="assets/revah3.png" />
             <TypingAnimation
               durationInSeconds={6}
@@ -458,7 +459,7 @@ function Power(props) {
       {pageNumber === 6 ? (
         <>
           <div className="power">
-            <h2>בואו נתרגל קצת</h2>
+            <h2 className="blueHeader">בואו נתרגל קצת</h2>
             <img className="image2" src="assets/revah3.png" />
             <TypingAnimation
               durationInSeconds={10}
@@ -528,7 +529,7 @@ function Power(props) {
       {pageNumber === 7 ? (
         <>
           <div className="power">
-            <h2>חידה</h2>
+            <h2 className="blueHeader">חידה</h2>
             <img className="image2" src="assets/revah3.png" />
             <TypingAnimation
               durationInSeconds={24}

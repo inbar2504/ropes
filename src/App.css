@@ -1,7 +1,6 @@
-
 @font-face {
   font-family: "avram";
-  src: url(./assets/Abraham-Regular.ttf);
+  src: url(/assets/Abraham-Regular.ttf);
 }
 html,
 #root,

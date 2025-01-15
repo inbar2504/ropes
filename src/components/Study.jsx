@@ -589,7 +589,12 @@ function Study(props) {
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
               <ScratchCard finishPercent={100} brushSize={20}>
-                <img height={150} width={300} src="assets/ring.jpg" />
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/ring.jpg"
+                  loading="lazy"
+                />
               </ScratchCard>
 
               {/* <ScratchCard finishPercent={100} brushSize={20}>
@@ -623,7 +628,12 @@ function Study(props) {
             <h3>יש לגרד כדי לגלות מהו הפריט החסר</h3>
             <div className="card-img">
               <ScratchCard finishPercent={100} brushSize={20}>
-                <img height={150} width={300} src="assets/sadran.jpg" />
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/sadran.jpg"
+                  loading="lazy"
+                />
               </ScratchCard>
               {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />

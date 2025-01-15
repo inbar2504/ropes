@@ -81,16 +81,16 @@ function Power(props) {
   }, [finish3]);
 
   useEffect(() => {
-    if (pageNumber === 3) {
+    if (pageNumber === 4) {
       console.log("hilo sir", "pageNumber 3");
       startTimer(11);
-    } else if (pageNumber === 5) {
+    } else if (pageNumber === 6) {
       console.log("hilo sir", "pageNumber 5");
       startTimer(7);
-    } else if (pageNumber === 6) {
+    } else if (pageNumber === 7) {
       console.log("hilo sir", "pageNumber 6");
       startTimer(11);
-    } else if (pageNumber === 7) {
+    } else if (pageNumber === 8) {
       console.log("hilo sir", "pageNumber 7");
       startTimer(25);
     }
@@ -261,7 +261,8 @@ function Power(props) {
                 `
                 במקרה הזה הגלגלת מחוברת לעגינה לכן העומס שפועל על העגינה יהיה שווה לעומס שפועל על הגלגלת
                 בגלגלת תמיד נשאף שהחבלים יהיו ללא זווית (חבלים יוצאים מאותו כיוון) 
-                `,100,
+                `,
+                100,
               ]}
             />
 
@@ -280,17 +281,20 @@ function Power(props) {
         <>
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
-            <img className="image3" src="assets/revah2.png" />
-            <TypingAnimation
-              durationInSeconds={10}
-              text={`התבקשת להרים משוקלת השוקלת T. 
+            <div className="flexBox1">
+              <img className="image3" src="assets/revah2.png" />
+              <TypingAnimation
+                durationInSeconds={10}
+                text={`התבקשת להרים משוקלת השוקלת T. 
               חשבו את העומסים כמו בהדגמה הקודמת ונסו להבין מה העומס על חבל המשיכה. 
               רמז: העומס על הגלגלת התחתונה שווה לעומס שמפעיל הבן אדם
               .
                התשובה תופיע בעוד 
               `}
-            />
-            {showTimer1 ? (
+              />
+            </div>
+
+            {showTimer1 && (
               <>
                 {isTimeUp ? (
                   <>
@@ -302,36 +306,39 @@ function Power(props) {
                   </>
                 )}
               </>
-            ) : (
-              <></>
             )}
+
             {timeLeft === 0 ? (
               <>
-                <video
-                  src="assets/video/01.mp4"
-                  // width="1440"
-                  // height="300"
-                  controls
-                  autoPlay
-                  className="video-comp1"
-                />
-                <TypeAnimation
-                  style={{
-                    whiteSpace: "pre-line",
-                    height: "195px",
-                    //   display: "block",
-                    textAlign: "center",
-                    direction: "rtl",
-                    display: "flex",
-                  }}
-                  sequence={[
-                    ` באמצעות השימוש בגלגלת, הורדתי את העומס על חבל המשיכה בחצי, כלומר-רווח כוח 2  
+                <div className="flexBox">
+                  <video
+                    src="assets/video/01.mp4"
+                    // width="1440"
+                    // height="300"
+                    controls
+                    autoPlay
+                    className="video-comp1"
+                  />
+                  <TypeAnimation
+                    style={{
+                      whiteSpace: "pre-line",
+                      height: "195px",
+                      //   display: "block",
+                      textAlign: "center",
+                      direction: "rtl",
+                      display: "flex",
+                    }}
+                    sequence={[
+                      `
+                      
+                      באמצעות השימוש בגלגלת, הורדתי את העומס על חבל המשיכה בחצי, כלומר-רווח כוח 2  
                   רווח כוח- היחס בין הכוח שאני מפעיל לכוח שמרגיש מטען החילוץ `,
-                    100,
-                  ]}
-                  // speed={100}
-                  cursor={false}
-                />
+                      100,
+                    ]}
+                    // speed={100}
+                    cursor={false}
+                  />
+                </div>
               </>
             ) : (
               <></>

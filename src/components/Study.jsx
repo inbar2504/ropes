@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { ScratchCard } from "/react-scratchcard";
+// import { ScratchCard } from "/react-scratchcard";
 import Swal from "sweetalert2";
-// import { ScratchCard } from "next-scratchcard";
+import { ScratchCard } from "next-scratchcard";
 
 function Study(props) {
   const [pageNum, setPageNum] = useState(0);
@@ -597,6 +597,14 @@ function Study(props) {
                   loading="eager"
                 />
               </ScratchCard>
+              {/* <ScratchCard finishPercent={100} brushSize={20}>
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/ring.jpg"
+                  loading="eager"
+                />
+              </ScratchCard> */}
 
               {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/ring.jpg" />
@@ -637,6 +645,14 @@ function Study(props) {
                   loading="eager"
                 />
               </ScratchCard>
+              {/* <ScratchCard finishPercent={100} brushSize={20}>
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/sadran.jpg"
+                  loading="eager"
+                />
+              </ScratchCard> */}
               {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />
               </ScratchCard> */}

@@ -78,8 +78,18 @@ body {
   height: 24vh;
 }
 .image3 {
-  height: 30vh;
-  margin: 5%;
+  height: 18vh;
+  /* margin: 5%; */
+}
+.flexBox {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 4vmin;
+}
+.flexBox1 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 4vmin;
 }
 .video-comp {
   /* width: 50vw; */

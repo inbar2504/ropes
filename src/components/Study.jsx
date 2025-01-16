@@ -605,7 +605,7 @@ function Study(props) {
                   // className="img-glisha"
                   height={150}
                   width={300}
-                  src="assets/noRing.jpg"
+                  src="assets/noRing_1.webp"
                   alt="תמונה של עמדת גלישה"
                   loading="lazy"
                 />

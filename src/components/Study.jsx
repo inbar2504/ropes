@@ -607,7 +607,7 @@ function Study(props) {
                   width={300}
                   src="assets/noRing.jpg"
                   alt="תמונה של עמדת גלישה"
-                  loading="eager"
+                  loading="lazy"
                 />
                 {/* <br /> */}
                 <br />
@@ -642,7 +642,7 @@ function Study(props) {
                   height={150}
                   width={300}
                   src="assets/ring.jpg"
-                  loading="eager"
+                  loading="lazy"
                 />
                 <br />
                 <button
@@ -661,7 +661,6 @@ function Study(props) {
               </div>
             </ReactCardFlip>
 
-           
             {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img
                   height={150}
@@ -696,7 +695,21 @@ function Study(props) {
             <h3 className="spacing">
               יש ללחוץ על התמונה כדי לגלות מהו הפריט החסר
             </h3>
-            <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+            <img
+              height={150}
+              width={300}
+              src="assets/sadran1.jpg"
+              alt="תמונה של עמדת גלישה"
+              loading="lazy"
+            />
+            <img
+              height={150}
+              width={300}
+              src="assets/sadran1.jpg"
+              alt="תמונה של עמדת גלישה"
+              loading="lazy"
+            />
+            {/* <ReactCardFlip isFlipped={flip} flipDirection="vertical">
               <div
                 style={{
                   width: "300px",
@@ -712,14 +725,12 @@ function Study(props) {
                 }}
               >
                 <img
-                  // className="img-glisha"
                   height={150}
                   width={300}
                   src="assets/sadran1.jpg"
                   alt="תמונה של עמדת גלישה"
                   loading="eager"
                 />
-                {/* <br /> */}
                 <br />
                 <button
                   style={{
@@ -769,7 +780,7 @@ function Study(props) {
                   לחצו כאן
                 </button>
               </div>
-            </ReactCardFlip>
+            </ReactCardFlip> */}
             {/* <div className="card-img">
               <div className="flip-card">
                 <div className="flip-card-inner">
@@ -791,7 +802,7 @@ function Study(props) {
                   </div>
                 </div>
               </div> */}
-              {/* <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
+            {/* <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
               src="assets/sadran1.jpg"
@@ -808,7 +819,7 @@ function Study(props) {
                   loading="eager"
                 />
               </ScratchCard> */}
-              {/* <ScratchCard finishPercent={100} brushSize={20}>
+            {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />
               </ScratchCard> */}
             {/* </div> */}

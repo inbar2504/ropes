@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-// import { ScratchCard } from "/react-scratchcard";
+import { ScratchCard } from "/react-scratchcard";
 import Swal from "sweetalert2";
-import ReactCardFlip from "react-card-flip";
+// import ReactCardFlip from "react-card-flip";
 
 function Study(props) {
   const [pageNum, setPageNum] = useState(0);
@@ -583,10 +583,21 @@ function Study(props) {
             <h1 className="head">חבלים 3</h1>
 
             <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
+            
+            <img height={150} width={100} src="assets/noRing.jpg" />
             <h3 className="spacing">
-              יש ללחוץ על התמונה כדי לגלות מהו הפריט החסר
+              יש לגרד את התמונה כדי לגלות מהו הפריט החסר
             </h3>
-            <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+            <ScratchCard finishPercent={100} brushSize={20} height={150}
+                width={100}>
+              <img
+                height={150}
+                width={100}
+                src="assets/ring.jpg"
+                loading="eager"
+              />
+            </ScratchCard>
+            {/* <ReactCardFlip isFlipped={flip} flipDirection="vertical">
               <div
                 style={{
                   width: "300px",
@@ -605,11 +616,11 @@ function Study(props) {
                   // className="img-glisha"
                   height={150}
                   width={300}
-                  src="assets/noRing_1.webp"
+                  src="assets/noRing.jpg"
                   alt="תמונה של עמדת גלישה"
                   loading="lazy"
                 />
-                {/* <br /> */}
+ 
                 <br />
                 <button
                   style={{
@@ -659,16 +670,7 @@ function Study(props) {
                   לחצו כאן
                 </button>
               </div>
-            </ReactCardFlip>
-
-            {/* <ScratchCard finishPercent={100} brushSize={20}>
-                <img
-                  height={150}
-                  width={300}
-                  src="assets/ring.jpg"
-                  loading="eager"
-                />
-              </ScratchCard> */}
+            </ReactCardFlip> */}
 
             {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/ring.jpg" />
@@ -692,23 +694,26 @@ function Study(props) {
           <div className="study-page">
             <h1 className="head">חבלים 3</h1>
             <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
-            <h3 className="spacing">
+            <img
+              className="img-glisha"
+              src="assets/sadran1.jpg"
+              alt="תמונה של עמדת גלישה"
+              loading="eager"
+            />
+            <h3 className="spacing">יש לגרד כדי לגלות מהו הפריט החסר</h3>
+
+            <ScratchCard finishPercent={100} brushSize={20} height={150}
+                width={170}>
+              <img
+                height={150}
+                width={170}
+                src="assets/sadran.jpg"
+                loading="eager"
+              />
+            </ScratchCard>
+            {/* <h3 className="spacing">
               יש ללחוץ על התמונה כדי לגלות מהו הפריט החסר
-            </h3>
-            <img
-              height={150}
-              width={300}
-              src="assets/sadran1.jpg"
-              alt="תמונה של עמדת גלישה"
-              loading="lazy"
-            />
-            <img
-              height={150}
-              width={300}
-              src="assets/sadran1.jpg"
-              alt="תמונה של עמדת גלישה"
-              loading="lazy"
-            />
+            </h3> */}
             {/* <ReactCardFlip isFlipped={flip} flipDirection="vertical">
               <div
                 style={{
@@ -802,27 +807,11 @@ function Study(props) {
                   </div>
                 </div>
               </div> */}
-            {/* <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
-            <img
-              className="img-glisha"
-              src="assets/sadran1.jpg"
-              alt="תמונה של עמדת גלישה"
-              loading="eager"
-            />
-            <h3 className="spacing">יש לגרד כדי לגלות מהו הפריט החסר</h3>
-            <div className="card-img">
-              <ScratchCard finishPercent={100} brushSize={20}>
-                <img
-                  height={150}
-                  width={300}
-                  src="assets/sadran.jpg"
-                  loading="eager"
-                />
-              </ScratchCard> */}
+            {/* <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2> */}
+
             {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />
-              </ScratchCard> */}
-            {/* </div> */}
+               </ScratchCard>  */}
           </div>
           <div className="move-btns">
             <button className="next-btn" onClick={() => setPageNum(7)}>

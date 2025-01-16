@@ -46,7 +46,8 @@ body {
   margin: 10%;
 }
 .txt {
-  width: 50vw;
+  width: 55vw;
+  letter-spacing: 1px;
 }
 .btn-start-place {
   display: flex;

@@ -6,15 +6,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
-import { ScratchCard } from "/react-scratchcard";
+// import { ScratchCard } from "/react-scratchcard";
 import Swal from "sweetalert2";
-
+import ReactCardFlip from "react-card-flip";
 
 function Study(props) {
   const [pageNum, setPageNum] = useState(0);
   const [answer1, setAnswer1] = useState("");
   const [answer2, setAnswer2] = useState("");
   const [finish1, setFinish1] = useState("false");
+
+  const [flip, setFlip] = useState(false);
 
   useEffect(() => {
     if (finish1 === "true") {
@@ -581,28 +583,98 @@ function Study(props) {
             <h1 className="head">חבלים 3</h1>
 
             <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
-            <img
-              className="img-glisha"
-              src="assets/noRing.jpg"
-              alt="תמונה של עמדת גלישה"
-              loading="eager"
-            />
-            <h3 className="spacing">יש לגרד כדי לגלות מהו הפריט החסר</h3>
-            <div className="card-img">
-              
-              <ScratchCard finishPercent={100} brushSize={20}>
+            <h3 className="spacing">
+              יש ללחוץ על התמונה כדי לגלות מהו הפריט החסר
+            </h3>
+            <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <div
+                style={{
+                  width: "300px",
+                  height: "200px",
+                  background: "#ffffff91",
+                  fontSize: "40px",
+                  color: "green",
+                  margin: "20px",
+                  borderRadius: "4px",
+                  textAlign: "center",
+                  padding: "20px",
+                  fontFamily: "avram !important",
+                }}
+              >
+                <img
+                  // className="img-glisha"
+                  height={150}
+                  width={300}
+                  src="assets/noRing.jpg"
+                  alt="תמונה של עמדת גלישה"
+                  loading="eager"
+                />
+                {/* <br /> */}
+                <br />
+                <button
+                  style={{
+                    width: "150px",
+                    padding: "10px",
+                    fontSize: "20px",
+                    background: "#f7a619",
+                    borderRadius: "15px",
+                    border: "#f0f8ff00",
+                  }}
+                  onClick={() => setFlip(!flip)}
+                >
+                  לחצו כאן
+                </button>
+              </div>
+              <div
+                style={{
+                  width: "300px",
+                  height: "200px",
+                  background: "#ffffff91",
+                  fontSize: "40px",
+                  color: "blue",
+                  margin: "20px",
+                  borderRadius: "4px",
+                  textAlign: "center",
+                  padding: "20px",
+                }}
+              >
                 <img
                   height={150}
                   width={300}
                   src="assets/ring.jpg"
                   loading="eager"
                 />
-              </ScratchCard>
+                <br />
+                <button
+                  style={{
+                    width: "150px",
+                    padding: "10px",
+                    fontSize: "20px",
+                    background: "#f7a619",
+                    borderRadius: "15px",
+                    border: "#f0f8ff00",
+                  }}
+                  onClick={() => setFlip(!flip)}
+                >
+                  לחצו כאן
+                </button>
+              </div>
+            </ReactCardFlip>
 
-              {/* <ScratchCard finishPercent={100} brushSize={20}>
+           
+            {/* <ScratchCard finishPercent={100} brushSize={20}>
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/ring.jpg"
+                  loading="eager"
+                />
+              </ScratchCard> */}
+
+            {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/ring.jpg" />
               </ScratchCard> */}
-            </div>
+            {/* </div> */}
           </div>
           <div className="move-btns">
             <button className="next-btn" onClick={() => setPageNum(6)}>
@@ -620,8 +692,106 @@ function Study(props) {
         <>
           <div className="study-page">
             <h1 className="head">חבלים 3</h1>
-
             <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
+            <h3 className="spacing">
+              יש ללחוץ על התמונה כדי לגלות מהו הפריט החסר
+            </h3>
+            <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+              <div
+                style={{
+                  width: "300px",
+                  height: "200px",
+                  background: "#ffffff91",
+                  fontSize: "40px",
+                  color: "green",
+                  margin: "20px",
+                  borderRadius: "4px",
+                  textAlign: "center",
+                  padding: "20px",
+                  fontFamily: "avram !important",
+                }}
+              >
+                <img
+                  // className="img-glisha"
+                  height={150}
+                  width={300}
+                  src="assets/sadran1.jpg"
+                  alt="תמונה של עמדת גלישה"
+                  loading="eager"
+                />
+                {/* <br /> */}
+                <br />
+                <button
+                  style={{
+                    width: "150px",
+                    padding: "10px",
+                    fontSize: "20px",
+                    background: "#f7a619",
+                    borderRadius: "15px",
+                    border: "#f0f8ff00",
+                  }}
+                  onClick={() => setFlip(!flip)}
+                >
+                  לחצו כאן
+                </button>
+              </div>
+              <div
+                style={{
+                  width: "300px",
+                  height: "200px",
+                  background: "#ffffff91",
+                  fontSize: "40px",
+                  color: "blue",
+                  margin: "20px",
+                  borderRadius: "4px",
+                  textAlign: "center",
+                  padding: "20px",
+                }}
+              >
+                <img
+                  height={150}
+                  width={300}
+                  src="assets/sadran.jpg"
+                  loading="eager"
+                />
+                <br />
+                <button
+                  style={{
+                    width: "150px",
+                    padding: "10px",
+                    fontSize: "20px",
+                    background: "#f7a619",
+                    borderRadius: "15px",
+                    border: "#f0f8ff00",
+                  }}
+                  onClick={() => setFlip(!flip)}
+                >
+                  לחצו כאן
+                </button>
+              </div>
+            </ReactCardFlip>
+            {/* <div className="card-img">
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img
+                      className="img-glisha"
+                      src="assets/sadran1.jpg"
+                      alt="תמונה של עמדת גלישה"
+                      loading="eager"
+                    />
+                  </div>
+                  <div className="flip-card-back">
+                    <img
+                      height={200}
+                      width={300}
+                      src="assets/sadran.jpg"
+                      loading="eager"
+                    />
+                  </div>
+                </div>
+              </div> */}
+              {/* <h2 className="head1">מצא את הפריט החסר מעמדת הגלישה</h2>
             <img
               className="img-glisha"
               src="assets/sadran1.jpg"
@@ -637,11 +807,11 @@ function Study(props) {
                   src="assets/sadran.jpg"
                   loading="eager"
                 />
-              </ScratchCard>
+              </ScratchCard> */}
               {/* <ScratchCard finishPercent={100} brushSize={20}>
                 <img height={150} width={300} src="assets/sadran.jpg" />
               </ScratchCard> */}
-            </div>
+            {/* </div> */}
           </div>
           <div className="move-btns">
             <button className="next-btn" onClick={() => setPageNum(7)}>

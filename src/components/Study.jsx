@@ -64,7 +64,7 @@ function Study(props) {
             <h3 className="seder">דפדפו כדי לראות את סדר הפעולות</h3>
             <Swiper
               pagination={{
-                type: "fraction",
+                type: 'fraction',
               }}
               // navigation={true}
               modules={[Pagination, Navigation]}

@@ -242,7 +242,7 @@ function Power(props) {
           <div className="power">
             <h2 className="blackHeader">?איך עובדת גלגלת</h2>
             <video
-              src="assets/video/01.mp4"
+              src="assets/video/Comp01update.mp4"
               // width="1440"
               // height="300"
               controls
@@ -312,7 +312,7 @@ function Power(props) {
               <>
                 <div className="flexBox">
                   <video
-                    src="assets/video/01.mp4"
+                    src="assets/video/Comp01update.mp4"
                     // width="1440"
                     // height="300"
                     controls
@@ -361,7 +361,7 @@ function Power(props) {
           <div className="power">
             <h2 className="blackHeader">הדגמה-רווח כוח 3</h2>
             <video
-              src="assets/video/02.mp4"
+              src="assets/video/Comp02update.mp4"
               // width="1440"
               // height="300"
               controls

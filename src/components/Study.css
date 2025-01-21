@@ -43,7 +43,6 @@ body {
   transform: translateX(-50%);
 }
 
-
 /* .swiper-horizontal::part() {
   touch-action: pan-y;
   position: absolute;
@@ -111,12 +110,14 @@ body {
   font-variant: initial;
   line-height: 1;
   color: #083b4c;
-} 
+}
 .swiper-pagination-fraction {
   color: var(--swiper-pagination-fraction-color, inherit);
-  color: cornflowerblue !important;
+  color: #083b4c !important;
 }
-.swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+.swiper-android .swiper-slide,
+.swiper-ios .swiper-slide,
+.swiper-wrapper {
   transform: none;
 }
 .text {

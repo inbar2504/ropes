@@ -9,7 +9,7 @@ import TypingAnimation from "./TypingAnimation";
 function Power(props) {
   const [pageNumber, setPageNumber] = useState(0);
   const [finish3, setFinish3] = useState("false");
-  const [timeLeft, setTimeLeft] = useState(3);
+  const [timeLeft, setTimeLeft] = useState(10);
   const [isTimeUp, setIsTimeUp] = useState(false);
   const [timerRunning, setTimerRunning] = useState(false); // כדי למנוע הפעלה כפולה של הטיימר
   const [showImage1, setShowImage1] = useState(false);
@@ -282,7 +282,7 @@ function Power(props) {
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
             <div className="flexBox1">
-              <img className="image3" src="assets/revah2.png" />
+              <img className="image3" src="assets/revah3.png" />
               <TypingAnimation
                 durationInSeconds={10}
                 text={`התבקשת להרים משוקלת השוקלת T. 

@@ -41,7 +41,7 @@ function Power(props) {
       console.log("timeToStartInSeconds", timeToStartInSeconds);
 
       setShowTimer1(true);
-      setTimeLeft(3); // אתחול הזמן ל-3 שניות
+      setTimeLeft(10); // אתחול הזמן ל-3 שניות
       setIsTimeUp(false); // אתחול הודעת הזמן נגמר
       setTimerRunning(true); // סימן שהטיימר רץ
     }, timeToStartInSeconds * 1000);
@@ -282,7 +282,7 @@ function Power(props) {
           <div className="power">
             <h2 className="blueHeader">בואו נתרגל קצת</h2>
             <div className="flexBox1">
-              <img className="image3" src="assets/revah3.png" />
+              <img className="image3" src="assets/revah2.png" />
               <TypingAnimation
                 durationInSeconds={10}
                 text={`התבקשת להרים משוקלת השוקלת T. 
